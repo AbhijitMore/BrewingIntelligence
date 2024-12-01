@@ -1,0 +1,158 @@
+site_name: Brewing Intelligence
+site_url: https://abhijitmore.github.io/BrewingIntelligence/
+repo_url: https://github.com/AbhijitMore/BrewingIntelligence/
+repo_name: AbhijitMore/BrewingIntelligence
+nav:
+  - Home:
+    - index.md
+  - Python:
+    - Python/Basics.md
+    - Python/Modules and Packages.md
+    - Python/Object Oriented Programming.md
+    - Python/Advanced Python.md
+    - Python/Handling Database.md
+    - Python/Network and Security.md
+    - Python/Web Scraping.md
+  - DSA:
+    - Basics:
+      - DSA/Basics/Arrays.md
+      - DSA/Basics/Linked Lists.md
+      - DSA/Basics/Stack.md
+      - DSA/Basics/Queue.md
+      - DSA/Basics/Tree.md
+      - DSA/Basics/Graph.md
+      - DSA/Basics/Backtracking.md
+      - DSA/Basics/Dynamic Programming.md
+      - DSA/Basics/Greedy Algorithms.md
+    - Patterns:
+      - DSA/Patterns/01. Bit Manipulation.md
+      - DSA/Patterns/02. Two Pointers.md
+      - DSA/Patterns/03. Fast and Slow Pointers.md
+      - DSA/Patterns/04. Sliding Window.md
+      - DSA/Patterns/05. Merge Intervals.md
+      - DSA/Patterns/06. Greedy Algorithm.md
+      - DSA/Patterns/07. Divide and Conquer.md
+      - DSA/Patterns/08. Dynamic Programming.md
+      - DSA/Patterns/09. Backtracking.md
+      - DSA/Patterns/10. Trie (Prefix Tree).md
+      - DSA/Patterns/11. Hashing.md
+      - DSA/Patterns/12. Graph Traversal.md
+      - DSA/Patterns/13. Topological Sort.md
+      - DSA/Patterns/14. Union Find (Disjoint Set Union - DSU).md
+      - DSA/Patterns/15. Segment Tree.md
+      - DSA/Patterns/16. Heap.md
+      - DSA/Patterns/17. KMP Algorithm.md
+      - DSA/Patterns/18. Rabin-Karp Algorithm.md
+      - DSA/Patterns/19. Z Algorithm.md
+      - DSA/Patterns/20. Floyd-Warshall Algorithm.md
+      - DSA/Patterns/21. Kruskal’s Algorithm.md
+      - DSA/Patterns/22. Prim’s Algorithm.md
+      - DSA/Patterns/23. Boyer-Moore Voting Algorithm.md
+  - Design Patterns:
+    - Design Patterns/Behavioural.md
+    - Design Patterns/Creational.md
+    - Design Patterns/Structural.md
+  - Data Analysis:
+    - Data Analysis/NumPy.md
+    - Data Analysis/Scipy.md
+    - Data Analysis/Pandas.md
+    - Data Analysis/Polars.md
+    - Visualization:
+      - Data Analysis/Matplotlib.md
+      - Data Analysis/Seaborn.md
+      - Data Analysis/Plotly.md
+      - Data Analysis/Bokeh.md
+    - Handling Images:
+      - Data Analysis/OpenCV.md
+      - Data Analysis/PIL.md
+  - Machine Learning:
+    - Machine Learning/Linear Regression.md
+    - Machine Learning/Logistic Regression.md
+    - Machine Learning/Naive Bayes.md
+    - Machine Learning/K-Nearest Neighbours.md
+    - Machine Learning/Support Vector Machine.md
+    - Machine Learning/Decision Tree.md
+    - Machine Learning/Ensemble Techniques.md
+    - Machine Learning/Dimensionality Reduction.md
+    - Machine Learning/Clustering.md
+    - Machine Learning/Recommendation Systems.md
+  - Deep Learning:
+    - Deep Learning/Neural Networks Basics.md 
+    - Deep Learning/Optimization Algorithms.md
+    - Deep Learning/Training Deep Networks.md
+    - Computer Vision:
+      - Deep Learning/Image Classification.md 
+      - Deep Learning/Object Detection.md 
+      - Deep Learning/Segmentation.md
+    - Natual Language Processing:
+      - Deep Learning/RNN.md
+      - Deep Learning/LSTM.md
+      - Deep Learning/GRU.md
+  - Gen AI:
+    - Gen AI/Generative Adverserial Network.md
+    - Gen AI/Variational Autoencoders.md
+    - Gen AI/Diffusion Models.md
+    - Gen AI/Transformers.md
+  - DevOps:
+    - DevOps/Scripting.md
+    - DevOps/package manager and virtual environment.md
+    - DevOps/Publishing Python Packages.md
+    - DevOps/Continuous Integration.md
+    - DevOps/Flask.md
+    - DevOps/Docker.md
+    - DevOps/Mlflow.md
+    - DevOps/Logging.md
+    - DevOps/Documentation, Styling and Pre-commit.md
+theme:
+  custom_dir: brew_env/lib/python3.12/site-packages/material/overrides
+  features:
+    - navigation.tabs
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+  name: material
+  font: 
+    text: Roboto Mono
+    code: Red Hat Mono
+  favicon: assets/brain-solid.ico
+  logo: assets/brain-solid.svg
+  icon:  
+    repo: fontawesome/brands/github
+  palette:
+    scheme: default
+    primary: black
+    accent: indigo
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - admonition
+  - pymdownx.details
+
+extra:
+  social:
+    - icon: simple/linkedin
+      link: https://linkedin.com/in/hey-abhijit-more
+    - icon: fontawesome/brands/github
+      link: https://github.com/AbhijitMore
+    - icon: fontawesome/regular/envelope-open
+      link: mailto:abhimore@gmail.com
+
+copyright: Copyright &copy; 2025 Abhijit More

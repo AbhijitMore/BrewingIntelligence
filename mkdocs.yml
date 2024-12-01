@@ -24,7 +24,9 @@ nav:
       - DSA/Basics/Backtracking.md
       - DSA/Basics/Dynamic Programming.md
       - DSA/Basics/Greedy Algorithms.md
+      - DSA/Basics/Sorting.md
     - Patterns:
+      - DSA/Patterns/00. Prefix Sum.md
       - DSA/Patterns/01. Bit Manipulation.md
       - DSA/Patterns/02. Two Pointers.md
       - DSA/Patterns/03. Fast and Slow Pointers.md

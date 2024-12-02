@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abhijitmore.github.io/BrewingIntelligence/DSA/Patterns/23.%20Boyer-Moore%20Voting%20Algorithm/">
+        <link rel="canonical" href="https://abhijitmore.github.io/BrewingIntelligence/DSA/Basics/Binary%20Search/">
       
       
-        <link rel="prev" href="../22.%20Prim%E2%80%99s%20Algorithm/">
+        <link rel="prev" href="../Graph/">
       
       
-        <link rel="next" href="../../../Design%20Patterns/Behavioural/">
+        <link rel="next" href="../Sorting/">
       
       
       <link rel="icon" href="../../../assets/brain-solid.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>23. Boyer Moore Voting Algorithm - Brewing Intelligence</title>
+        <title>Binary Search - Brewing Intelligence</title>
       
     
     
@@ -43,8 +43,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Red Hat Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Epilogue:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Epilogue";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -70,6 +70,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#binary-search" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -100,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              23. Boyer Moore Voting Algorithm
+              Binary Search
             
           </span>
         </div>
@@ -229,7 +234,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../Basics/Arrays/" class="md-tabs__link">
+        <a href="../Arrays/" class="md-tabs__link">
           
   
   DSA
@@ -700,6 +705,8 @@
                 
   
   
+    
+  
   
   
     
@@ -709,11 +716,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
@@ -727,7 +734,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Basics
@@ -741,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basics/Arrays/" class="md-nav__link">
+      <a href="../Arrays/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -762,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basics/Linked%20Lists/" class="md-nav__link">
+      <a href="../Linked%20Lists/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -783,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basics/Stack/" class="md-nav__link">
+      <a href="../Stack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -804,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basics/Queue/" class="md-nav__link">
+      <a href="../Queue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -825,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basics/Tree/" class="md-nav__link">
+      <a href="../Tree/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -846,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basics/Graph/" class="md-nav__link">
+      <a href="../Graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -864,18 +871,130 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Basics/Backtracking/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Binary Search
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Backtracking
+    Binary Search
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introductory-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introductory Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upper-bound-and-lower-bound" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upper Bound and Lower Bound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-on-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search on Matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#missing-and-repeating-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing and Repeating Number
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-search-on-semi-sorted-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search on Semi-Sorted Space
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-search-on-answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search On Answer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minmax-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minmax Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-the-k-th-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding the K-th Element
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -888,49 +1007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basics/Dynamic%20Programming/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Dynamic Programming
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Basics/Greedy%20Algorithms/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Greedy Algorithms
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Basics/Sorting/" class="md-nav__link">
+      <a href="../Sorting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -956,8 +1033,6 @@
                 
   
   
-    
-  
   
   
     
@@ -967,11 +1042,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -985,7 +1060,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Patterns
@@ -999,11 +1074,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../00.%20Prefix%20Sum/" class="md-nav__link">
+      <a href="../../Patterns/00.%20Prefix%20Sum/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    00. Prefix Sum
+    00.Prefix Sum
   </span>
   
 
@@ -1020,7 +1095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01.%20Bit%20Manipulation/" class="md-nav__link">
+      <a href="../../Patterns/01.%20Bit%20Manipulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1041,11 +1116,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../02.%20Two%20Pointers/" class="md-nav__link">
+      <a href="../../Patterns/02.%20Two%20Pointers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    02. Two Pointers
+    02. Two Pointer
   </span>
   
 
@@ -1062,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03.%20Fast%20and%20Slow%20Pointers/" class="md-nav__link">
+      <a href="../../Patterns/03.%20Fast%20and%20Slow%20Pointers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1083,11 +1158,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../04.%20Sliding%20Window/" class="md-nav__link">
+      <a href="../../Patterns/04.%20Sliding%20Window/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    04. Sliding Window
+    04.Sliding-Window
   </span>
   
 
@@ -1104,7 +1179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05.%20Merge%20Intervals/" class="md-nav__link">
+      <a href="../../Patterns/05.%20Merge%20Intervals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,11 +1200,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../06.%20Greedy%20Algorithm/" class="md-nav__link">
+      <a href="../../Patterns/06.%20Greedy%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    06. Greedy Algorithm
+    06. Greedy Algorithms
   </span>
   
 
@@ -1146,7 +1221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07.%20Divide%20and%20Conquer/" class="md-nav__link">
+      <a href="../../Patterns/07.%20Divide%20and%20Conquer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1167,11 +1242,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../08.%20Dynamic%20Programming/" class="md-nav__link">
+      <a href="../../Patterns/08.%20Dynamic%20Programming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    08. Dynamic Programming
+    08.Dynamic Programming
   </span>
   
 
@@ -1188,11 +1263,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../09.%20Backtracking/" class="md-nav__link">
+      <a href="../../Patterns/09.%20Backtracking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    09. Backtracking
+    09.Recursion &amp; Backtracking
   </span>
   
 
@@ -1209,11 +1284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../10.%20Trie%20%28Prefix%20Tree%29/" class="md-nav__link">
+      <a href="../../Patterns/10.%20Trie%20%28Prefix%20Tree%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    10. Trie (Prefix Tree)
+    10. Tries
   </span>
   
 
@@ -1230,7 +1305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../11.%20Hashing/" class="md-nav__link">
+      <a href="../../Patterns/11.%20Hashing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1251,11 +1326,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../12.%20Graph%20Traversal/" class="md-nav__link">
+      <a href="../../Patterns/12.%20Union%20Find%20%28Disjoint%20Set%20Union%20-%20DSU%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    12. Graph Traversal
+    12. Union Find
   </span>
   
 
@@ -1272,11 +1347,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../13.%20Topological%20Sort/" class="md-nav__link">
+      <a href="../../Patterns/13.%20Segment%20Tree/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    13. Topological Sort
+    13. Segment Tree
   </span>
   
 
@@ -1293,11 +1368,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../14.%20Union%20Find%20%28Disjoint%20Set%20Union%20-%20DSU%29/" class="md-nav__link">
+      <a href="../../Patterns/14.%20Heap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    14. Union Find (Disjoint Set Union   DSU)
+    14. Heap
   </span>
   
 
@@ -1314,11 +1389,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../15.%20Segment%20Tree/" class="md-nav__link">
+      <a href="../../Patterns/15.%20KMP%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    15. Segment Tree
+    15. KMP Algorithm
   </span>
   
 
@@ -1335,11 +1410,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../16.%20Heap/" class="md-nav__link">
+      <a href="../../Patterns/16.%20Rabin-Karp%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    16. Heap
+    16. Robin-Karp Algorithm
   </span>
   
 
@@ -1356,11 +1431,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../17.%20KMP%20Algorithm/" class="md-nav__link">
+      <a href="../../Patterns/17.%20Z%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    17. KMP Algorithm
+    17. Z Algorithm
   </span>
   
 
@@ -1377,128 +1452,15 @@
   
   
     <li class="md-nav__item">
-      <a href="../18.%20Rabin-Karp%20Algorithm/" class="md-nav__link">
+      <a href="../../Patterns/18.%20Boyer-Moore%20Voting%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    18. Rabin Karp Algorithm
+    18. Boyer-Moore Voting Algorithm
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../19.%20Z%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    19. Z Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../20.%20Floyd-Warshall%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    20. Floyd Warshall Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../21.%20Kruskal%E2%80%99s%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    21. Kruskal’s Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../22.%20Prim%E2%80%99s%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    22. Prim’s Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    23. Boyer Moore Voting Algorithm
-  </span>
-  
-
-      </a>
-      
     </li>
   
 
@@ -2754,7 +2716,7 @@
         
   
   <span class="md-ellipsis">
-    Package manager and virtual environment
+    package manager and virtual environment
   </span>
   
 
@@ -2935,6 +2897,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introductory-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introductory Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upper-bound-and-lower-bound" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upper Bound and Lower Bound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-on-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search on Matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#missing-and-repeating-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing and Repeating Number
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-search-on-semi-sorted-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search on Semi-Sorted Space
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-search-on-answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search On Answer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minmax-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minmax Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-the-k-th-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding the K-th Element
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2952,9 +2996,15 @@
   
 
 
-  <h1>23. Boyer Moore Voting Algorithm</h1>
-
-
+<h1 id="binary-search">Binary Search</h1>
+<h2 id="introductory-problems">Introductory Problems</h2>
+<h2 id="upper-bound-and-lower-bound">Upper Bound and Lower Bound</h2>
+<h2 id="search-on-matrix">Search on Matrix</h2>
+<h2 id="missing-and-repeating-number">Missing and Repeating Number</h2>
+<h2 id="binary-search-on-semi-sorted-space">Binary Search on Semi-Sorted Space</h2>
+<h2 id="binary-search-on-answer">Binary Search On Answer</h2>
+<h2 id="minmax-problems">Minmax Problems</h2>
+<h2 id="finding-the-k-th-element">Finding the K-th Element</h2>
 
 
 
@@ -2984,7 +3034,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../22.%20Prim%E2%80%99s%20Algorithm/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 22. Prim’s Algorithm">
+          <a href="../Graph/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Graph">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2994,20 +3044,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                22. Prim’s Algorithm
+                Graph
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../Design%20Patterns/Behavioural/" class="md-footer__link md-footer__link--next" aria-label="Next: Behavioural Design Patterns">
+          <a href="../Sorting/" class="md-footer__link md-footer__link--next" aria-label="Next: Sorting">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Behavioural Design Patterns
+                Sorting
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -14,7 +14,7 @@
         <link rel="prev" href="../Tree/">
       
       
-        <link rel="next" href="../Backtracking/">
+        <link rel="next" href="../Binary%20Search/">
       
       
       <link rel="icon" href="../../../assets/brain-solid.ico">
@@ -43,8 +43,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Red Hat Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Epilogue:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Epilogue";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -70,6 +70,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#dfs-and-bfs-on-graphs" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -855,6 +860,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Graph
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -864,6 +880,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dfs-and-bfs-on-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      DFS and BFS on Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cycle-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cycle Detection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topological-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topological Sort
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flood-fill" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flood Fill
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-source-bfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi Source BFS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dijsktra-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dijsktra Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bellman-ford" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bellman Ford
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floyd-warshall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Floyd Warshall
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#travelling-salesman-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Travelling Salesman Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disjoint-set-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disjoint Set Union
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-spanning-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimum Spanning Tree
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-graph-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Graph Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -877,53 +1018,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../Backtracking/" class="md-nav__link">
+      <a href="../Binary%20Search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Backtracking
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Dynamic%20Programming/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Dynamic Programming
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Greedy%20Algorithms/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Greedy Algorithms
+    Binary Search
   </span>
   
 
@@ -1011,7 +1110,7 @@
         
   
   <span class="md-ellipsis">
-    00. Prefix Sum
+    00.Prefix Sum
   </span>
   
 
@@ -1053,7 +1152,7 @@
         
   
   <span class="md-ellipsis">
-    02. Two Pointers
+    02. Two Pointer
   </span>
   
 
@@ -1095,7 +1194,7 @@
         
   
   <span class="md-ellipsis">
-    04. Sliding Window
+    04.Sliding-Window
   </span>
   
 
@@ -1137,7 +1236,7 @@
         
   
   <span class="md-ellipsis">
-    06. Greedy Algorithm
+    06. Greedy Algorithms
   </span>
   
 
@@ -1179,7 +1278,7 @@
         
   
   <span class="md-ellipsis">
-    08. Dynamic Programming
+    08.Dynamic Programming
   </span>
   
 
@@ -1200,7 +1299,7 @@
         
   
   <span class="md-ellipsis">
-    09. Backtracking
+    09.Recursion &amp; Backtracking
   </span>
   
 
@@ -1221,7 +1320,7 @@
         
   
   <span class="md-ellipsis">
-    10. Trie (Prefix Tree)
+    10. Tries
   </span>
   
 
@@ -1259,11 +1358,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Patterns/12.%20Graph%20Traversal/" class="md-nav__link">
+      <a href="../../Patterns/12.%20Union%20Find%20%28Disjoint%20Set%20Union%20-%20DSU%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    12. Graph Traversal
+    12. Union Find
   </span>
   
 
@@ -1280,11 +1379,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Patterns/13.%20Topological%20Sort/" class="md-nav__link">
+      <a href="../../Patterns/13.%20Segment%20Tree/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    13. Topological Sort
+    13. Segment Tree
   </span>
   
 
@@ -1301,11 +1400,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Patterns/14.%20Union%20Find%20%28Disjoint%20Set%20Union%20-%20DSU%29/" class="md-nav__link">
+      <a href="../../Patterns/14.%20Heap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    14. Union Find (Disjoint Set Union   DSU)
+    14. Heap
   </span>
   
 
@@ -1322,11 +1421,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Patterns/15.%20Segment%20Tree/" class="md-nav__link">
+      <a href="../../Patterns/15.%20KMP%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    15. Segment Tree
+    15. KMP Algorithm
   </span>
   
 
@@ -1343,11 +1442,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Patterns/16.%20Heap/" class="md-nav__link">
+      <a href="../../Patterns/16.%20Rabin-Karp%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    16. Heap
+    16. Robin-Karp Algorithm
   </span>
   
 
@@ -1364,11 +1463,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Patterns/17.%20KMP%20Algorithm/" class="md-nav__link">
+      <a href="../../Patterns/17.%20Z%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    17. KMP Algorithm
+    17. Z Algorithm
   </span>
   
 
@@ -1385,116 +1484,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Patterns/18.%20Rabin-Karp%20Algorithm/" class="md-nav__link">
+      <a href="../../Patterns/18.%20Boyer-Moore%20Voting%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    18. Rabin Karp Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Patterns/19.%20Z%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    19. Z Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Patterns/20.%20Floyd-Warshall%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    20. Floyd Warshall Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Patterns/21.%20Kruskal%E2%80%99s%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    21. Kruskal’s Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Patterns/22.%20Prim%E2%80%99s%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    22. Prim’s Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Patterns/23.%20Boyer-Moore%20Voting%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    23. Boyer Moore Voting Algorithm
+    18. Boyer-Moore Voting Algorithm
   </span>
   
 
@@ -2754,7 +2748,7 @@
         
   
   <span class="md-ellipsis">
-    Package manager and virtual environment
+    package manager and virtual environment
   </span>
   
 
@@ -2936,6 +2930,122 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dfs-and-bfs-on-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      DFS and BFS on Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cycle-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cycle Detection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topological-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topological Sort
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flood-fill" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flood Fill
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-source-bfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi Source BFS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dijsktra-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dijsktra Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bellman-ford" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bellman Ford
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floyd-warshall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Floyd Warshall
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#travelling-salesman-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Travelling Salesman Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disjoint-set-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disjoint Set Union
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-spanning-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimum Spanning Tree
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-graph-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Graph Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2954,7 +3064,18 @@
 
   <h1>Graph</h1>
 
-
+<h2 id="dfs-and-bfs-on-graphs">DFS and BFS on Graphs</h2>
+<h2 id="cycle-detection">Cycle Detection</h2>
+<h2 id="topological-sort">Topological Sort</h2>
+<h2 id="flood-fill">Flood Fill</h2>
+<h2 id="multi-source-bfs">Multi Source BFS</h2>
+<h2 id="dijsktra-algorithm">Dijsktra Algorithm</h2>
+<h2 id="bellman-ford">Bellman Ford</h2>
+<h2 id="floyd-warshall">Floyd Warshall</h2>
+<h2 id="travelling-salesman-problem">Travelling Salesman Problem</h2>
+<h2 id="disjoint-set-union">Disjoint Set Union</h2>
+<h2 id="minimum-spanning-tree">Minimum Spanning Tree</h2>
+<h2 id="additional-graph-algorithm">Additional Graph Algorithm</h2>
 
 
 
@@ -3001,13 +3122,13 @@
         
         
           
-          <a href="../Backtracking/" class="md-footer__link md-footer__link--next" aria-label="Next: Backtracking">
+          <a href="../Binary%20Search/" class="md-footer__link md-footer__link--next" aria-label="Next: Binary Search">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Backtracking
+                Binary Search
               </div>
             </div>
             <div class="md-footer__button md-icon">

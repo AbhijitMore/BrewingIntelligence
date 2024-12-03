@@ -21,9 +21,7 @@ nav:
       - DSA/Basics/Queue.md
       - DSA/Basics/Tree.md
       - DSA/Basics/Graph.md
-      - DSA/Basics/Backtracking.md
-      - DSA/Basics/Dynamic Programming.md
-      - DSA/Basics/Greedy Algorithms.md
+      - DSA/Basics/Binary Search.md
       - DSA/Basics/Sorting.md
     - Patterns:
       - DSA/Patterns/00. Prefix Sum.md
@@ -38,18 +36,13 @@ nav:
       - DSA/Patterns/09. Backtracking.md
       - DSA/Patterns/10. Trie (Prefix Tree).md
       - DSA/Patterns/11. Hashing.md
-      - DSA/Patterns/12. Graph Traversal.md
-      - DSA/Patterns/13. Topological Sort.md
-      - DSA/Patterns/14. Union Find (Disjoint Set Union - DSU).md
-      - DSA/Patterns/15. Segment Tree.md
-      - DSA/Patterns/16. Heap.md
-      - DSA/Patterns/17. KMP Algorithm.md
-      - DSA/Patterns/18. Rabin-Karp Algorithm.md
-      - DSA/Patterns/19. Z Algorithm.md
-      - DSA/Patterns/20. Floyd-Warshall Algorithm.md
-      - DSA/Patterns/21. Kruskal’s Algorithm.md
-      - DSA/Patterns/22. Prim’s Algorithm.md
-      - DSA/Patterns/23. Boyer-Moore Voting Algorithm.md
+      - DSA/Patterns/12. Union Find (Disjoint Set Union - DSU).md
+      - DSA/Patterns/13. Segment Tree.md
+      - DSA/Patterns/14. Heap.md
+      - DSA/Patterns/15. KMP Algorithm.md
+      - DSA/Patterns/16. Rabin-Karp Algorithm.md
+      - DSA/Patterns/17. Z Algorithm.md
+      - DSA/Patterns/18. Boyer-Moore Voting Algorithm.md
   - Design Patterns:
     - Design Patterns/Behavioural.md
     - Design Patterns/Creational.md
@@ -114,8 +107,8 @@ theme:
     - content.code.annotate
   name: material
   font: 
-    text: Roboto Mono
-    code: Red Hat Mono
+    text: Epilogue
+    code: Roboto Mono
   favicon: assets/brain-solid.ico
   logo: assets/brain-solid.svg
   icon:  

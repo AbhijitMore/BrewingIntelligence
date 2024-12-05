@@ -4,7 +4,7 @@ Behavioral patterns focus on the interaction between objects, their communicatio
 
 ## Memento Pattern
 
-!!! note "Purpose"
+!!! abstract "Purpose"
     Primary Purpose of Memento Pattern is to save and store previous state of an object. The Caretaker is responsible for storing and restoring the Memento without modifying it. <br>
     In this blog, we will explore how the Memento Pattern is implemented in Java through an example of a simple Graphic Editor that can save and undo shape modifications.
 

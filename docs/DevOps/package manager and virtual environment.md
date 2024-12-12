@@ -3,6 +3,6 @@
 ## PIP
 ## venev
 ## Anaconda
+## poetry
 ## pyenv
 ## uv
-## poetry

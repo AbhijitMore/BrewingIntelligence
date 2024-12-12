@@ -13,40 +13,44 @@ nav:
     - Python/Handling Database.md
     - Python/Network and Security.md
     - Python/Web Scraping.md
-  - DSA:
-    - Basics:
-      - DSA/Basics/Arrays.md
-      - DSA/Basics/Linked Lists.md
-      - DSA/Basics/Stack.md
-      - DSA/Basics/Queue.md
-      - DSA/Basics/Tree.md
-      - DSA/Basics/Graph.md
-      - DSA/Basics/Binary Search.md
-      - DSA/Basics/Sorting.md
-    - Patterns:
-      - DSA/Patterns/00. Prefix Sum.md
-      - DSA/Patterns/01. Bit Manipulation.md
-      - DSA/Patterns/02. Two Pointers.md
-      - DSA/Patterns/03. Fast and Slow Pointers.md
-      - DSA/Patterns/04. Sliding Window.md
-      - DSA/Patterns/05. Merge Intervals.md
-      - DSA/Patterns/06. Greedy Algorithm.md
-      - DSA/Patterns/07. Divide and Conquer.md
-      - DSA/Patterns/08. Dynamic Programming.md
-      - DSA/Patterns/09. Backtracking.md
-      - DSA/Patterns/10. Trie (Prefix Tree).md
-      - DSA/Patterns/11. Hashing.md
-      - DSA/Patterns/12. Union Find (Disjoint Set Union - DSU).md
-      - DSA/Patterns/13. Segment Tree.md
-      - DSA/Patterns/14. Heap.md
-      - DSA/Patterns/15. KMP Algorithm.md
-      - DSA/Patterns/16. Rabin-Karp Algorithm.md
-      - DSA/Patterns/17. Z Algorithm.md
-      - DSA/Patterns/18. Boyer-Moore Voting Algorithm.md
-  - Design Patterns:
-    - Design Patterns/Behavioural.md
-    - Design Patterns/Creational.md
-    - Design Patterns/Structural.md
+  - Programming:
+    - DSA Basics:
+      - Programming/DSA Basics/Arrays.md
+      - Programming/DSA Basics/Linked Lists.md
+      - Programming/DSA Basics/Stack.md
+      - Programming/DSA Basics/Queue.md
+      - Programming/DSA Basics/Tree.md
+      - Programming/DSA Basics/Graph.md
+      - Programming/DSA Basics/Binary Search.md
+      - Programming/DSA Basics/Sorting.md
+    - DSA Patterns:
+      - Programming/DSA Patterns/00. Prefix Sum.md
+      - Programming/DSA Patterns/01. Bit Manipulation.md
+      - Programming/DSA Patterns/02. Two Pointers.md
+      - Programming/DSA Patterns/03. Fast and Slow Pointers.md
+      - Programming/DSA Patterns/04. Sliding Window.md
+      - Programming/DSA Patterns/05. Merge Intervals.md
+      - Programming/DSA Patterns/06. Greedy Algorithm.md
+      - Programming/DSA Patterns/07. Divide and Conquer.md
+      - Programming/DSA Patterns/08. Dynamic Programming.md
+      - Programming/DSA Patterns/09. Backtracking.md
+      - Programming/DSA Patterns/10. Trie (Prefix Tree).md
+      - Programming/DSA Patterns/11. Hashing.md
+      - Programming/DSA Patterns/12. Union Find (Disjoint Set Union - DSU).md
+      - Programming/DSA Patterns/13. Segment Tree.md
+      - Programming/DSA Patterns/14. Heap.md
+      - Programming/DSA Patterns/15. KMP Algorithm.md
+      - Programming/DSA Patterns/16. Rabin-Karp Algorithm.md
+      - Programming/DSA Patterns/17. Z Algorithm.md
+      - Programming/DSA Patterns/18. Boyer-Moore Voting Algorithm.md
+    - Design Patterns:
+      - Programming/Design Patterns/Behavioural.md
+      - Programming/Design Patterns/Creational.md
+      - Programming/Design Patterns/Structural.md
+    - System Design:
+      - Programming/System Design/Introduction.md
+    - Software Architecture Patterns:
+      - Programming/Software Architecture Patterns/Introduction.md
   - Data Analysis:
     - Data Analysis/NumPy.md
     - Data Analysis/Scipy.md
@@ -61,16 +65,32 @@ nav:
       - Data Analysis/OpenCV.md
       - Data Analysis/PIL.md
   - Machine Learning:
-    - Machine Learning/Linear Regression.md
-    - Machine Learning/Logistic Regression.md
-    - Machine Learning/Naive Bayes.md
-    - Machine Learning/K-Nearest Neighbours.md
-    - Machine Learning/Support Vector Machine.md
-    - Machine Learning/Decision Tree.md
-    - Machine Learning/Ensemble Techniques.md
-    - Machine Learning/Dimensionality Reduction.md
-    - Machine Learning/Clustering.md
-    - Machine Learning/Recommendation Systems.md
+    - Data Preprocessing:
+      - Machine Learning/Data Preprocessing/Handling Missing Data.md
+      - Machine Learning/Data Preprocessing/Data Cleaning.md
+      - Machine Learning/Data Preprocessing/Feature Scaling.md
+      - Machine Learning/Data Preprocessing/Feature Engineering.md
+      - Machine Learning/Data Preprocessing/Feature Selection.md
+      - Machine Learning/Data Preprocessing/Handling Categorical Data.md
+      - Machine Learning/Data Preprocessing/Data Splitting.md
+      - Machine Learning/Data Preprocessing/Dimensionality Reduction.md
+    - Models:
+      - Machine Learning/Models/Linear Regression.md
+      - Machine Learning/Models/Logistic Regression.md
+      - Machine Learning/Models/Naive Bayes.md
+      - Machine Learning/Models/K-Nearest Neighbours.md
+      - Machine Learning/Models/Support Vector Machine.md
+      - Machine Learning/Models/Decision Tree.md
+      - Machine Learning/Models/Ensemble Techniques.md
+      - Machine Learning/Models/Dimensionality Reduction.md
+      - Machine Learning/Models/Clustering.md
+      - Machine Learning/Models/Recommendation Systems.md
+    - Model Evaluation and Validation:
+      - Machine Learning/Model Evaluation and Validation/Cross-Validation Techniques.md
+      - Machine Learning/Model Evaluation and Validation/Performance Metrics for Classification.md
+      - Machine Learning/Model Evaluation and Validation/Performance Metrics for Regression.md
+      - Machine Learning/Model Evaluation and Validation/Bias-Variance Tradeoff.md
+      - Machine Learning/Model Evaluation and Validation/Hyperparameter Tuning.md
   - Deep Learning:
     - Deep Learning/Neural Networks Basics.md 
     - Deep Learning/Optimization Algorithms.md
@@ -79,6 +99,8 @@ nav:
       - Deep Learning/Image Classification.md 
       - Deep Learning/Object Detection.md 
       - Deep Learning/Segmentation.md
+      - Deep Learning/Keypoint Detection.md
+      - Deep Learning/Optical Flow.md
     - Natual Language Processing:
       - Deep Learning/RNN.md
       - Deep Learning/LSTM.md
@@ -92,12 +114,13 @@ nav:
     - DevOps/Scripting.md
     - DevOps/package manager and virtual environment.md
     - DevOps/Publishing Python Packages.md
+    - DevOps/Documentation, Styling and Pre-commit.md
+    - DevOps/Logging.md
     - DevOps/Continuous Integration.md
     - DevOps/Flask.md
     - DevOps/Docker.md
     - DevOps/Mlflow.md
-    - DevOps/Logging.md
-    - DevOps/Documentation, Styling and Pre-commit.md
+    - DevOps/ZenML.md
 theme:
   custom_dir: brew_env/lib/python3.12/site-packages/material/overrides
   features:

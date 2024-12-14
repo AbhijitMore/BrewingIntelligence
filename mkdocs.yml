@@ -14,15 +14,21 @@ nav:
     - Python/Network and Security.md
     - Python/Web Scraping.md
   - Programming:
-    - DSA Basics:
-      - Programming/DSA Basics/Arrays.md
-      - Programming/DSA Basics/Linked Lists.md
-      - Programming/DSA Basics/Stack.md
-      - Programming/DSA Basics/Queue.md
-      - Programming/DSA Basics/Tree.md
-      - Programming/DSA Basics/Graph.md
-      - Programming/DSA Basics/Binary Search.md
-      - Programming/DSA Basics/Sorting.md
+    - Data Structures:
+      - Programming/Data Structures/List.md
+      - Programming/Data Structures/Hashing.md
+      - Programming/Data Structures/Trie.md
+      - Programming/Data Structures/Linked List.md
+      - Programming/Data Structures/Stack.md
+      - Programming/Data Structures/Queue.md
+      - Programming/Data Structures/Tree.md
+      - Programming/Data Structures/Binary Search Tree.md
+      - Programming/Data Structures/Heap.md
+      - Programming/Data Structures/Graph.md
+    - Algorithmic Concepts:
+      - Programming/Algorithmic Concepts/Searching.md
+      - Programming/Algorithmic Concepts/Sorting.md
+      - Programming/Algorithmic Concepts/Recursion.md
     - DSA Patterns:
       - Programming/DSA Patterns/00. Prefix Sum.md
       - Programming/DSA Patterns/01. Bit Manipulation.md
@@ -34,15 +40,12 @@ nav:
       - Programming/DSA Patterns/07. Divide and Conquer.md
       - Programming/DSA Patterns/08. Dynamic Programming.md
       - Programming/DSA Patterns/09. Backtracking.md
-      - Programming/DSA Patterns/10. Trie (Prefix Tree).md
-      - Programming/DSA Patterns/11. Hashing.md
-      - Programming/DSA Patterns/12. Union Find (Disjoint Set Union - DSU).md
-      - Programming/DSA Patterns/13. Segment Tree.md
-      - Programming/DSA Patterns/14. Heap.md
-      - Programming/DSA Patterns/15. KMP Algorithm.md
-      - Programming/DSA Patterns/16. Rabin-Karp Algorithm.md
-      - Programming/DSA Patterns/17. Z Algorithm.md
-      - Programming/DSA Patterns/18. Boyer-Moore Voting Algorithm.md
+      - Programming/DSA Patterns/10. Union Find (Disjoint Set Union - DSU).md
+      - Programming/DSA Patterns/11. Segment Tree.md
+      - Programming/DSA Patterns/12. KMP Algorithm.md
+      - Programming/DSA Patterns/13. Rabin-Karp Algorithm.md
+      - Programming/DSA Patterns/14. Z Algorithm.md
+      - Programming/DSA Patterns/15. Boyer-Moore Voting Algorithm.md
     - Design Patterns:
       - Programming/Design Patterns/Behavioural.md
       - Programming/Design Patterns/Creational.md

@@ -1,4 +1,4 @@
-# Binary Search
+# Searching
 
 ## Introductory Problems
 ## Upper Bound and Lower Bound

@@ -114,7 +114,7 @@ nav:
     - Gen AI/Diffusion Models.md
     - Gen AI/Transformers.md
   - DevOps:
-    - DevOps/Scripting.md
+    - DevOps/Shell.md
     - DevOps/package manager and virtual environment.md
     - DevOps/Publishing Python Packages.md
     - DevOps/Documentation, Styling and Pre-commit.md

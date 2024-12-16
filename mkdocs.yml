@@ -120,6 +120,7 @@ nav:
     - DevOps/Publishing Python Packages.md
     - DevOps/Documentation, Styling and Pre-commit.md
     - DevOps/Logging.md
+    - DevOps/Build Systems.md
     - DevOps/Continuous Integration.md
     - DevOps/Flask.md
     - DevOps/Docker.md

@@ -18,7 +18,6 @@
 #### Configuration and Customization
 #### tmux Plugins and Extensions
 #### Troubleshooting and Best Practices
-#### Conclusion
 
 ### Dotfiles
 

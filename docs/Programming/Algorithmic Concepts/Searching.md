@@ -6,8 +6,8 @@
 def linear_search(arr, target):
     for index in range(len(arr)):
         if arr[index] == target:
-            return index  # Return the index if target is found
-    return -1  # Return -1 if the target is not found
+            return index
+    return -1
 
 numbers = [10, 20, 30, 40, 50]
 target = 30

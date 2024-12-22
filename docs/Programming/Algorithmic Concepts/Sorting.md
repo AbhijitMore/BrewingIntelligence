@@ -265,7 +265,129 @@ def bucket_sort(numbers):
         insertion_sort(bucket)
     return [num for bucket in buckets for num in bucket]
 
-numbers = [60, 40, 70, 20, 50, 30, 90, 45]
+import random
+numbers = [random.randint(1, 1000) for _ in range(500)]
 sorted_numbers = bucket_sort(numbers)
 print("Sorted numbers:", sorted_numbers)
+```
+
+## 9. tim sort
+
+```python linenums="1"
+def insertion_sort(arr, left, right):
+    for i in range(left + 1, right + 1):
+        key = arr[i]
+        j = i - 1
+        while j >= left and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+
+def merge(arr, left, mid, right):
+    left_sub = arr[left:mid + 1]
+    right_sub = arr[mid + 1:right + 1]
+    i, j, k = 0, 0, left
+
+    while i < len(left_sub) and j < len(right_sub):
+        if left_sub[i] <= right_sub[j]:
+            arr[k] = left_sub[i]
+            i += 1
+        else:
+            arr[k] = right_sub[j]
+            j += 1
+        k += 1
+
+    arr[k:k + len(left_sub) - i] = left_sub[i:]
+    arr[k:k + len(right_sub) - j] = right_sub[j:]
+
+def timsort(arr):
+    n = len(arr)
+    RUN = 32
+
+    for start in range(0, n, RUN):
+        end = min(start + RUN - 1, n - 1)
+        insertion_sort(arr, start, end)
+
+    size = RUN
+    while size < n:
+        for start in range(0, n, 2 * size):
+            mid = min(n - 1, start + size - 1)
+            end = min(start + 2 * size - 1, n - 1)
+            if mid < end:
+                merge(arr, start, mid, end)
+        size *= 2
+
+    return arr
+
+numbers = [60, 40, 70, 20, 50, 30, 90, 45]
+sorted_numbers = timsort(numbers)
+print("Sorted array:", sorted_numbers)
+```
+
+## 10. Intro sort
+```python linenums="1"
+import math
+
+def insertion_sort(arr, left, right):
+    for i in range(left + 1, right + 1):
+        key = arr[i]
+        j = i - 1
+        while j >= left and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+
+def heapify(arr, n, i):
+    largest = i
+    left = 2 * i + 1
+    right = 2 * i + 2
+
+    if left < n and arr[left] > arr[largest]:
+        largest = left
+    if right < n and arr[right] > arr[largest]:
+        largest = right
+
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]
+        heapify(arr, n, largest)
+
+def heapsort(arr):
+    n = len(arr)
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(arr, n, i)
+    
+    for i in range(n - 1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]
+        heapify(arr, i, 0)
+
+def quicksort(arr, left, right, depth_limit):
+    if left < right:
+        if right - left < 16:
+            insertion_sort(arr, left, right)
+        elif depth_limit == 0:
+            heapsort(arr[left:right+1])
+        else:
+            pivot = partition(arr, left, right)
+            quicksort(arr, left, pivot - 1, depth_limit - 1)
+            quicksort(arr, pivot + 1, right, depth_limit - 1)
+
+def partition(arr, left, right):
+    pivot = arr[right]
+    i = left - 1
+    for j in range(left, right):
+        if arr[j] <= pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+    arr[i + 1], arr[right] = arr[right], arr[i + 1]
+    return i + 1
+
+def introsort(arr):
+    depth_limit = int(math.log2(len(arr)) * 2)
+    quicksort(arr, 0, len(arr) - 1, depth_limit)
+    return arr
+
+import random
+numbers = [random.randint(1, 1000) for _ in range(500)]
+sorted_numbers = introsort(numbers)
+print("Sorted array:", sorted_numbers)
 ```

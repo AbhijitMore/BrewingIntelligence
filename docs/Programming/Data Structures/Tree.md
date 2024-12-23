@@ -65,7 +65,6 @@ class BinaryTree:
         if node is None:
             return 0
         else:
-            # Size is 1 (current node) + size of left subtree + size of right subtree
             return 1 + self.size(node.left) + self.size(node.right)
 
     # Function to get the maximum value in the tree
@@ -73,24 +72,96 @@ class BinaryTree:
         if node is None:
             return float('-inf')  # Negative infinity as base case
         else:
-            # Get the maximum value in the left and right subtrees
             left_max = self.max_value(node.left)
             right_max = self.max_value(node.right)
-            # Return the largest of the current node's value, left max, and right max
             return max(node.value, left_max, right_max)
+
+    # Function to check if a given key is present in the tree
+    def contains(self, node, key):
+        if node is None:
+            return False
+        if node.value == key:
+            return True
+        return self.contains(node.left, key) or self.contains(node.right, key)
+
+    # Function to calculate the height of the tree
+    def height(self, node):
+        if node is None:
+            return -1  # For an empty tree, return -1 (or 0, based on convention)
+        else:
+            # Get the height of the left and right subtrees and return the larger one + 1
+            left_height = self.height(node.left)
+            right_height = self.height(node.right)
+            return 1 + max(left_height, right_height)
+    
+    def iterative_inorder_traversal(self, root):
+        stack = []
+        current = root
+        
+        while stack or current:
+            # Reach the leftmost node
+            while current:
+                stack.append(current)
+                current = current.left
+            
+            # Pop from stack and visit the node
+            current = stack.pop()
+            print(current.value, end=" ")
+            
+            # Move to the right subtree
+            current = current.right
+
+    def iterative_preorder_traversal(self, root):
+        if root is None:
+            return
+        
+        stack = [root]
+        
+        while stack:
+            node = stack.pop()
+            print(node.value, end=" ")
+            
+            # Push right child first so that left child is processed first
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
+
+    # Iterative Post-order Traversal (using a stack)
+    def iterative_postorder_traversal(self, root):
+        if root is None:
+            return
+        
+        stack = []
+        last_visited_node = None
+        current = root
+        
+        while stack or current:
+            if current:
+                stack.append(current)
+                current = current.left
+            else:
+                peek_node = stack[-1]
+                # If the right child is None or already processed
+                if peek_node.right is None or peek_node.right == last_visited_node:
+                    print(peek_node.value, end=" ")
+                    last_visited_node = stack.pop()
+                else:
+                    # Move to the right subtree
+                    current = peek_node.right
 
 # Example usage of the BinaryTree class:
 if __name__ == "__main__":
     # Creating the root of the binary tree
-    tree = BinaryTree(50)
+    tree = BinaryTree(1)
 
     # Inserting left and right children
-    tree.insert_left(tree.root, 27)
-    tree.insert_right(tree.root, 32)
+    tree.insert_left(tree.root, 2)
+    tree.insert_right(tree.root, 3)
 
     # Inserting more nodes
-    tree.insert_left(tree.root.left, 15)
-    tree.insert_right(tree.root.left, 39)
+    tree.insert_left(tree.root.left, 4)
+    tree.insert_right(tree.root.left, 5)
 
     # Traversals
     print("In-order Traversal:")
@@ -105,6 +176,26 @@ if __name__ == "__main__":
 
     # Get maximum value in the tree
     print("Maximum value in the tree:", tree.max_value(tree.root))
+
+    # Check if a key is present in the tree
+    key = 5
+    print(f"Is {key} present in the tree? {tree.contains(tree.root, key)}")
+
+    key = 10
+    print(f"Is {key} present in the tree? {tree.contains(tree.root, key)}")
+
+    # Calculate the height of the tree
+    print("Height of the tree:", tree.height(tree.root))
+
+    # Iterative Traversals
+    print("\nIn-order Traversal (Iterative):")
+    tree.iterative_inorder_traversal(tree.root)
+    
+    print("\nPre-order Traversal (Iterative):")
+    tree.iterative_preorder_traversal(tree.root)
+    
+    print("\nPost-order Traversal (Iterative):")
+    tree.iterative_postorder_traversal(tree.root)
 ```
 
 ### Binary Tree 

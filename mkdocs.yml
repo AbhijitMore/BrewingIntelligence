@@ -16,15 +16,15 @@ nav:
   - Programming:
     - Data Structures:
       - Programming/Data Structures/List.md
-      - Programming/Data Structures/Hashing.md
-      - Programming/Data Structures/Trie.md
       - Programming/Data Structures/Linked List.md
       - Programming/Data Structures/Stack.md
       - Programming/Data Structures/Queue.md
       - Programming/Data Structures/Deque.md
+      - Programming/Data Structures/Hashing.md
       - Programming/Data Structures/Tree.md
       - Programming/Data Structures/Binary Search Tree.md
       - Programming/Data Structures/Heap.md
+      - Programming/Data Structures/Trie.md
       - Programming/Data Structures/Graph.md
     - Algorithmic Concepts:
       - Programming/Algorithmic Concepts/Searching.md

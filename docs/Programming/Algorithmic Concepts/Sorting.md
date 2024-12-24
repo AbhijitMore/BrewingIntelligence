@@ -1,6 +1,7 @@
 # Sorting
 
-## 1. Bubble Sort
+## Simple Comparison-based Algorithms
+### 1. Bubble Sort
 
 === "Basic"
     ```python linenums="1"
@@ -35,7 +36,7 @@
     print(sorted_numbers)
     ```
 
-## 2. Insertion Sort
+### 2. Insertion Sort
 
 ```python linenums="1"
 def insertion_sort(numbers):
@@ -53,7 +54,7 @@ sorted_numbers = selection_sort(numbers)
 print(sorted_numbers)
 ```
 
-## 3. Selection Sort
+### 3. Selection Sort
 
 ```python linenums="1"
 def selection_sort(numbers):
@@ -70,8 +71,8 @@ numbers = [60,40,70,20,50,30,90,45]
 sorted_numbers = selection_sort(numbers)
 print(sorted_numbers)
 ```
-
-## 4. Merge Sort
+## Efficient Comparison-based Algorithms
+### 4. Merge Sort
 
 ```python linenums="1"
 def merge(left, right):
@@ -106,7 +107,7 @@ sorted_numbers = merge_sort(numbers)
 print(sorted_numbers)
 ```
 
-## 5. Quick Sort
+### 5. Quick Sort
 === "Naive partition"
     ```python linenums="1"
     def naive_partition(numbers, pivot):
@@ -185,93 +186,41 @@ print(sorted_numbers)
     hoare_quick_sort(numbers, 0, len(numbers) - 1)
     print("Hoare Quick Sort:", numbers)
     ```
-
-## 6. Counting Sort
-
+### 6. Heap Sort
 ```python linenums="1"
-def counting_sort(numbers):
-    max_value = max(numbers)
-    count = [0] * (max_value + 1)
-    
-    for num in numbers:
-        count[num] += 1
-    
-    sorted_numbers = []
-    for value in range(len(count)):
-        sorted_numbers.extend([value] * count[value])
-    
-    return sorted_numbers
+def heap_sort(numbers):
+    def heapify(numbers, n, i):
+        largest = i
+        left = 2 * i + 1
+        right = 2 * i + 2
+
+        if left < n and numbers[left] > numbers[largest]:
+            largest = left
+        if right < n and numbers[right] > numbers[largest]:
+            largest = right
+
+        if largest != i:
+            numbers[i], numbers[largest] = numbers[largest], numbers[i]
+            heapify(numbers, n, largest)
+
+    n = len(numbers)
+
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(numbers, n, i)
+
+    for i in range(n - 1, 0, -1):
+        numbers[i], numbers[0] = numbers[0], numbers[i]
+        heapify(numbers, i, 0)
+
+    return numbers
 
 numbers = [60, 40, 70, 20, 50, 30, 90, 45]
-sorted_numbers = counting_sort(numbers)
+sorted_numbers = heap_sort(numbers)
 print("Sorted numbers:", sorted_numbers)
 ```
-## 7. Radix Sort
-```python 
-def counting_sort_for_radix(numbers, place):
-    size = len(numbers)
-    output = [0] * size
-    count = [0] * 10
-    
-    for num in numbers:
-        index = num // place
-        count[index % 10] += 1
-    
-    for i in range(1, 10):
-        count[i] += count[i - 1]
-    
-    for num in reversed(numbers):
-        index = num // place
-        output[count[index % 10] - 1] = num
-        count[index % 10] -= 1
-    
-    for i in range(size):
-        numbers[i] = output[i]
+## Hybrid Comparison-based Algorithms
 
-def radix_sort(numbers):
-    max_value = max(numbers)
-    place = 1
-    while max_value // place > 0:
-        counting_sort_for_radix(numbers, place)
-        place *= 10
-
-numbers = [60, 40, 70, 20, 50, 30, 90, 45]
-radix_sort(numbers)
-print("Sorted numbers:", numbers)
-```
-## 8. Bucket Sort
-
-```python linenums="1"
-def insertion_sort(numbers):
-    for i in range(1, len(numbers)):
-        key = numbers[i]
-        j = i - 1
-        while j >= 0 and numbers[j] > key:
-            numbers[j + 1] = numbers[j]
-            j -= 1
-        numbers[j + 1] = key
-
-def bucket_sort(numbers):
-    if not numbers:
-        return numbers
-    min_value = min(numbers)
-    max_value = max(numbers)
-    bucket_count = len(numbers)
-    buckets = [[] for _ in range(bucket_count)]
-    for num in numbers:
-        index = (num - min_value) * (bucket_count - 1) // (max_value - min_value) if max_value != min_value else 0
-        buckets[index].append(num)
-    for bucket in buckets:
-        insertion_sort(bucket)
-    return [num for bucket in buckets for num in bucket]
-
-import random
-numbers = [random.randint(1, 1000) for _ in range(500)]
-sorted_numbers = bucket_sort(numbers)
-print("Sorted numbers:", sorted_numbers)
-```
-
-## 9. tim sort
+### 7. tim sort
 
 ```python linenums="1"
 def insertion_sort(arr, left, right):
@@ -324,7 +273,7 @@ sorted_numbers = timsort(numbers)
 print("Sorted array:", sorted_numbers)
 ```
 
-## 10. Intro sort
+### 8. Intro sort
 ```python linenums="1"
 import math
 
@@ -390,4 +339,89 @@ import random
 numbers = [random.randint(1, 1000) for _ in range(500)]
 sorted_numbers = introsort(numbers)
 print("Sorted array:", sorted_numbers)
+```
+## Non-Comparison-based Algorithms
+### 9. Counting Sort
+
+```python linenums="1"
+def counting_sort(numbers):
+    max_value = max(numbers)
+    count = [0] * (max_value + 1)
+    
+    for num in numbers:
+        count[num] += 1
+    
+    sorted_numbers = []
+    for value in range(len(count)):
+        sorted_numbers.extend([value] * count[value])
+    
+    return sorted_numbers
+
+numbers = [60, 40, 70, 20, 50, 30, 90, 45]
+sorted_numbers = counting_sort(numbers)
+print("Sorted numbers:", sorted_numbers)
+```
+### 10. Radix Sort
+```python 
+def counting_sort_for_radix(numbers, place):
+    size = len(numbers)
+    output = [0] * size
+    count = [0] * 10
+    
+    for num in numbers:
+        index = num // place
+        count[index % 10] += 1
+    
+    for i in range(1, 10):
+        count[i] += count[i - 1]
+    
+    for num in reversed(numbers):
+        index = num // place
+        output[count[index % 10] - 1] = num
+        count[index % 10] -= 1
+    
+    for i in range(size):
+        numbers[i] = output[i]
+
+def radix_sort(numbers):
+    max_value = max(numbers)
+    place = 1
+    while max_value // place > 0:
+        counting_sort_for_radix(numbers, place)
+        place *= 10
+
+numbers = [60, 40, 70, 20, 50, 30, 90, 45]
+radix_sort(numbers)
+print("Sorted numbers:", numbers)
+```
+### 11. Bucket Sort
+
+```python linenums="1"
+def insertion_sort(numbers):
+    for i in range(1, len(numbers)):
+        key = numbers[i]
+        j = i - 1
+        while j >= 0 and numbers[j] > key:
+            numbers[j + 1] = numbers[j]
+            j -= 1
+        numbers[j + 1] = key
+
+def bucket_sort(numbers):
+    if not numbers:
+        return numbers
+    min_value = min(numbers)
+    max_value = max(numbers)
+    bucket_count = len(numbers)
+    buckets = [[] for _ in range(bucket_count)]
+    for num in numbers:
+        index = (num - min_value) * (bucket_count - 1) // (max_value - min_value) if max_value != min_value else 0
+        buckets[index].append(num)
+    for bucket in buckets:
+        insertion_sort(bucket)
+    return [num for bucket in buckets for num in bucket]
+
+import random
+numbers = [random.randint(1, 1000) for _ in range(500)]
+sorted_numbers = bucket_sort(numbers)
+print("Sorted numbers:", sorted_numbers)
 ```

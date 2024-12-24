@@ -3,15 +3,7 @@
 ## Tree
 
 ### Terminologies
-
-### Traversals
-#### Breadth First Traversal
-#### Depth First Traversal
-##### 1. Inorder
-##### 2. Preorder
-##### 3. Postorder
-
-#### Implementation
+### Implementation
 ```python linenums="1"
 class Node:
     def __init__(self, value):
@@ -197,5 +189,3 @@ if __name__ == "__main__":
     print("\nPost-order Traversal (Iterative):")
     tree.iterative_postorder_traversal(tree.root)
 ```
-
-### Binary Tree 

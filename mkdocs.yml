@@ -127,6 +127,11 @@ nav:
     - DevOps/Docker.md
     - DevOps/Mlflow.md
     - DevOps/ZenML.md
+  - Data Engineering:
+    - Data Engineering/Spark.md
+    - Data Engineering/Kafka.md
+    - Data Engineering/Flink.md
+
 theme:
   custom_dir: brew_env/lib/python3.12/site-packages/material/overrides
   features:

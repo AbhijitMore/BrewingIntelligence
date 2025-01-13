@@ -3,3 +3,5 @@
 ## DDPM
 
 ## Stable Diffusion
+
+## Flux

@@ -93,6 +93,7 @@ about advancing AI for everyone. Join us and start learning today!
   <div style="flex: 0 0 calc(33.333% - 15px); box-sizing: border-box;">
     <a href="Gen AI/Generative Adverserial Network">🤖 Gen AI</a>
     <ul>
+      <li class="li_tag">RBMs</li>
       <li class="li_tag">GANs</li>
       <li class="li_tag">VAEs</li>
       <li class="li_tag">Diffusion Models</li>

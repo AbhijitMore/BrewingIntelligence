@@ -110,6 +110,7 @@ nav:
       - Deep Learning/LSTM.md
       - Deep Learning/GRU.md
   - Gen AI:
+    - Gen AI/Restricted Boltzmann Machines.md
     - Gen AI/Generative Adverserial Network.md
     - Gen AI/Variational Autoencoders.md
     - Gen AI/Diffusion Models.md

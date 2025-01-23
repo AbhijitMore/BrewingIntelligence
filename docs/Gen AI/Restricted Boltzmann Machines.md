@@ -4,4 +4,6 @@
 
 ## Markov Networks
 
+## Markov Chains
+
 ## RBMs

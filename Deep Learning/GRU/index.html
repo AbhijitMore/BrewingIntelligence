@@ -14,7 +14,7 @@
         <link rel="prev" href="../LSTM/">
       
       
-        <link rel="next" href="../../Gen%20AI/Generative%20Adverserial%20Network/">
+        <link rel="next" href="../../Gen%20AI/Restricted%20Boltzmann%20Machines/">
       
       
       <link rel="icon" href="../../assets/brain-solid.ico">
@@ -59,6 +59,8 @@
   
   
     
+    
+      
     
     
     
@@ -108,7 +110,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -311,7 +339,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Gen%20AI/Generative%20Adverserial%20Network/" class="md-tabs__link">
+        <a href="../../Gen%20AI/Restricted%20Boltzmann%20Machines/" class="md-tabs__link">
           
   
   Gen AI
@@ -333,6 +361,24 @@
           
   
   DevOps
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Data%20Engineering/Spark/" class="md-tabs__link">
+          
+  
+  Data Engineering
 
         </a>
       </li>
@@ -3139,11 +3185,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Gen%20AI/Generative%20Adverserial%20Network/" class="md-nav__link">
+      <a href="../../Gen%20AI/Restricted%20Boltzmann%20Machines/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Generative Adverserial Network
+    Restricted Boltzmann Machines
   </span>
   
 
@@ -3165,6 +3211,27 @@
   
   <span class="md-ellipsis">
     Variational Autoencoders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Gen%20AI/Generative%20Adverserial%20Network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generative Adverserial Network
   </span>
   
 
@@ -3520,6 +3587,114 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data Engineering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Data Engineering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Data%20Engineering/Spark/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spark
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Data%20Engineering/Kafka/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kafka
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Data%20Engineering/Flink/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flink
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -3603,13 +3778,13 @@
         
         
           
-          <a href="../../Gen%20AI/Generative%20Adverserial%20Network/" class="md-footer__link md-footer__link--next" aria-label="Next: Generative Adverserial Network">
+          <a href="../../Gen%20AI/Restricted%20Boltzmann%20Machines/" class="md-footer__link md-footer__link--next" aria-label="Next: Restricted Boltzmann Machines">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Generative Adverserial Network
+                Restricted Boltzmann Machines
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abhijitmore.github.io/BrewingIntelligence/Gen%20AI/Transformers/">
+        <link rel="canonical" href="https://abhijitmore.github.io/BrewingIntelligence/Gen%20AI/Restricted%20Boltzmann%20Machines/">
       
       
-        <link rel="prev" href="../Diffusion%20Models/">
+        <link rel="prev" href="../../Deep%20Learning/GRU/">
       
       
-        <link rel="next" href="../../DevOps/Shell/">
+        <link rel="next" href="../Variational%20Autoencoders/">
       
       
       <link rel="icon" href="../../assets/brain-solid.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Transformers - Brewing Intelligence</title>
+        <title>Restricted Boltzmann Machines - Brewing Intelligence</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#large-language-model" class="md-skip">
+        <a href="#probability-recap" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Transformers
+              Restricted Boltzmann Machines
             
           </span>
         </div>
@@ -344,7 +344,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../Restricted%20Boltzmann%20Machines/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   Gen AI
@@ -3177,10 +3177,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Restricted%20Boltzmann%20Machines/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Restricted Boltzmann Machines
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -3189,6 +3207,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#probability-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probability Recap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baysian-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baysian Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markov-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markov Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markov-chains" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markov Chains
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rbms" class="md-nav__link">
+    <span class="md-ellipsis">
+      RBMs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3261,28 +3342,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Transformers
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Transformers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3291,42 +3354,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#large-language-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Large Language Model
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vision-transformer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vision Transformer
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3769,18 +3796,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#large-language-model" class="md-nav__link">
+  <a href="#probability-recap" class="md-nav__link">
     <span class="md-ellipsis">
-      Large Language Model
+      Probability Recap
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#vision-transformer" class="md-nav__link">
+  <a href="#baysian-networks" class="md-nav__link">
     <span class="md-ellipsis">
-      Vision Transformer
+      Baysian Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markov-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markov Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markov-chains" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markov Chains
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rbms" class="md-nav__link">
+    <span class="md-ellipsis">
+      RBMs
     </span>
   </a>
   
@@ -3804,10 +3858,13 @@
   
 
 
-  <h1>Transformers</h1>
+  <h1>Restricted Boltzmann Machines</h1>
 
-<h2 id="large-language-model">Large Language Model</h2>
-<h2 id="vision-transformer">Vision Transformer</h2>
+<h2 id="probability-recap">Probability Recap</h2>
+<h2 id="baysian-networks">Baysian Networks</h2>
+<h2 id="markov-networks">Markov Networks</h2>
+<h2 id="markov-chains">Markov Chains</h2>
+<h2 id="rbms">RBMs</h2>
 
 
 
@@ -3837,7 +3894,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Diffusion%20Models/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Diffusion Models">
+          <a href="../../Deep%20Learning/GRU/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GRU">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3847,20 +3904,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Diffusion Models
+                GRU
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../DevOps/Shell/" class="md-footer__link md-footer__link--next" aria-label="Next: Shell">
+          <a href="../Variational%20Autoencoders/" class="md-footer__link md-footer__link--next" aria-label="Next: Variational Autoencoders">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Shell
+                Variational Autoencoders
               </div>
             </div>
             <div class="md-footer__button md-icon">

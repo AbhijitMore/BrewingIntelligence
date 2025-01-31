@@ -111,8 +111,8 @@ nav:
       - Deep Learning/GRU.md
   - Gen AI:
     - Gen AI/Restricted Boltzmann Machines.md
-    - Gen AI/Generative Adverserial Network.md
     - Gen AI/Variational Autoencoders.md
+    - Gen AI/Generative Adverserial Network.md
     - Gen AI/Diffusion Models.md
     - Gen AI/Transformers.md
   - DevOps:
@@ -149,9 +149,17 @@ theme:
   icon:  
     repo: fontawesome/brands/github
   palette:
-    scheme: default
-    primary: black
-    accent: indigo
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+
 
 markdown_extensions:
   - tables

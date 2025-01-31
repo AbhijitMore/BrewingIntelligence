@@ -2,6 +2,8 @@
 
 ## DDPM
 
+## DDIM
+
 ## Classifier Guided Diffusion
 
 ## Classifier free Diffusion

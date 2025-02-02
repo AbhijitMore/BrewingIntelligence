@@ -115,6 +115,8 @@ nav:
     - Gen AI/Generative Adverserial Network.md
     - Gen AI/Diffusion Models.md
     - Gen AI/Transformers.md
+    - Gen AI/RAGs.md
+    - Gen AI/Agents.md
   - DevOps:
     - DevOps/Shell.md
     - DevOps/Git.md

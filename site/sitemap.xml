@@ -2,626 +2,682 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/Bokeh/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/Matplotlib/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/NumPy/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/OpenCV/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/PIL/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/Pandas/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/Plotly/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/Polars/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/Scipy/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Analysis/Seaborn/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Engineering/Flink/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Engineering/Kafka/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Data%20Engineering/Spark/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/AlexNet/</loc>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/Cnn%20Evolution/</loc>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/DenseNet/</loc>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/GRU/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
-         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/Image%20Classification/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/GoogLeNet-Inception/</loc>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/Keypoint%20Detection/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/LSTM/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/LeNet-5/</loc>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/MobileNet/</loc>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/Neural%20Networks%20Basics/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/Object%20Detection/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/Optical%20Flow/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/Optimization%20Algorithms/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/RNN/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/ResNet/</loc>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/Segmentation/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/ShuffleNet/</loc>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/SqueezeNet/</loc>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/Training%20Deep%20Networks/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/VGGNet/</loc>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/Deep%20Learning/XceptionNet/</loc>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Build%20Systems/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/CUDA%20and%20cuDNN/</loc>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Continuous%20Integration/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Docker/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Documentation%2C%20Styling%20and%20Pre-commit/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Edge%20Hardware%20Platform/</loc>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Flask/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Git/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Inference%20Optimization%20Engines/</loc>
+         <lastmod>2025-07-13</lastmod>
+    </url>
+    <url>
+         <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Inference%20Serving%20Frameworks/</loc>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Logging/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Mlflow/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Publishing%20Python%20Packages/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/Shell/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/ZenML/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/DevOps/package%20manager%20and%20virtual%20environment/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Gen%20AI/Agents/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Gen%20AI/Diffusion%20Models/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Gen%20AI/Generative%20Adverserial%20Network/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Gen%20AI/RAGs/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Gen%20AI/Restricted%20Boltzmann%20Machines/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Gen%20AI/Transformers/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Gen%20AI/Variational%20Autoencoders/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Data%20Preprocessing/Data%20Cleaning/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Data%20Preprocessing/Data%20Splitting/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Data%20Preprocessing/Dimensionality%20Reduction/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Data%20Preprocessing/Feature%20Engineering/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Data%20Preprocessing/Feature%20Scaling/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Data%20Preprocessing/Feature%20Selection/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Data%20Preprocessing/Handling%20Categorical%20Data/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Data%20Preprocessing/Handling%20Missing%20Data/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Model%20Evaluation%20and%20Validation/Bias-Variance%20Tradeoff/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Model%20Evaluation%20and%20Validation/Cross-Validation%20Techniques/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Model%20Evaluation%20and%20Validation/Hyperparameter%20Tuning/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Model%20Evaluation%20and%20Validation/Performance%20Metrics%20for%20Classification/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Model%20Evaluation%20and%20Validation/Performance%20Metrics%20for%20Regression/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/Clustering/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/Decision%20Tree/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/Dimensionality%20Reduction/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/Ensemble%20Techniques/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/K-Nearest%20Neighbours/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/Linear%20Regression/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/Logistic%20Regression/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/Naive%20Bayes/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/Recommendation%20Systems/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Machine%20Learning/Models/Support%20Vector%20Machine/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Algorithmic%20Concepts/Recursion/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Algorithmic%20Concepts/Searching/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Algorithmic%20Concepts/Sorting/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/00.%20Prefix%20Sum/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/01.%20Bit%20Manipulation/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/02.%20Two%20Pointers/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/03.%20Fast%20and%20Slow%20Pointers/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/04.%20Sliding%20Window/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/05.%20Merge%20Intervals/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/06.%20Greedy%20Algorithm/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/07.%20Divide%20and%20Conquer/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/08.%20Dynamic%20Programming/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/09.%20Backtracking/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/10.%20Union%20Find%20%28Disjoint%20Set%20Union%20-%20DSU%29/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/11.%20Segment%20Tree/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/12.%20KMP%20Algorithm/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/13.%20Rabin-Karp%20Algorithm/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/14.%20Z%20Algorithm/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/15.%20Boyer-Moore%20Voting%20Algorithm/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Binary%20Search%20Tree/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Deque/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Graph/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Hashing/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Heap/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Linked%20List/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/List/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Queue/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Stack/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Tree/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Data%20Structures/Trie/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Design%20Patterns/Behavioural/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Design%20Patterns/Creational/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Design%20Patterns/Structural/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/Software%20Architecture%20Patterns/Introduction/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Programming/System%20Design/Introduction/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Functions/Callable%20Objects/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Functions/Closures/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Functions/Decorators/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Functions/Function%20Annotations%20and%20Type%20Hints/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Functions/Higher%20Order%20Functions/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Functions/Lambda%20Functions/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Functions/Parameter%20Unpacking/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Functions/Partial%20Functions/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Functions/Variable%20Scope%20and%20nonlocal%20Keywords/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Advanced%20Use%20Cases%20and%20Applications/Building%20Command%20Line%20Interfaces/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Concurrency%20and%20Parallelism/Threading/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Data%20Model%20and%20Customization/Custom%20Containers/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/File%20and%20Data%20Handling/File%20IO/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Functional%20Programming/Map%2C%20Filter%20and%20Reduce/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Iterarators%2C%20Generators%20and%20Coroutines/Custom%20Iterators/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Memory%20Management%20and%20Performance/Reference%20Counting/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Meta%20Programming/Class%20Decorators/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Meta%20Programming/Code%20Generations%20using%20exec%28%29%20and%20eval%28%29/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Meta%20Programming/Inspect%20Module%20for%20Introspection/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Meta%20Programming/Metaclasses/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Meta%20Programming/Monkey%20Patching/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Meta%20Programming/type%28%29%20for%20Dynamic%20Class%20Creation/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Modules%20and%20Packaging/Creating%20Modules%20and%20Packages/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Network%20and%20Web%20Programming/HTTP%20Requests/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/New%20Python%20Features%20and%20Enhancements/New%20Syntax%20and%20Features/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Object%20Oriented%20Programming/%40property%20Decorators/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Object%20Oriented%20Programming/Abstract%20Base%20Classes/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Object%20Oriented%20Programming/Class%20Methods%20and%20Static%20Methods/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Object%20Oriented%20Programming/Dunder%20or%20Magic%20Methods/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Object%20Oriented%20Programming/Encapsulation%20and%20Access%20Modifiers/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Object%20Oriented%20Programming/Inheritance%20and%20Multiple%20Inheritance/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Object%20Oriented%20Programming/Method%20Resolution%20Order/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Object%20Oriented%20Programming/Polymorphism/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Python%20Internals/Global%20Interpreter%20Lock/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Security%20and%20Safe%20Practices/Managing%20Secrets/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Testing%20and%20Debugging/Unit%20Testing/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Advanced/Typing%20and%20Static%20Analysis/Type%20Hints%20and%20Annotations/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Basic%20Built-in%20Functions%20and%20Libraries/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Basic%20Error%20Handling/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Control%20Flow/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Data%20Structures/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Functions%20and%20Code%20Reuse/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Introdicion%20to%20OOPs/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Operators/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Python%20Language%20Fundamentals/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Strings/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/The%20Python%20Environment/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Intermediate/Classes%20and%20OOP%20Basics/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Intermediate/Data%20Handling%20and%20Standard%20Library/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Intermediate/Error%20Handling/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Intermediate/File%20Handling/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Intermediate/Functions%20and%20Scope/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Intermediate/Intermediate%20Syntax%20and%20Structures/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
     <url>
          <loc>https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Intermediate/Modules%20and%20Packages/</loc>
-         <lastmod>2025-06-12</lastmod>
+         <lastmod>2025-07-13</lastmod>
     </url>
 </urlset>

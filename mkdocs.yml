@@ -6,13 +6,80 @@ nav:
   - Home:
     - index.md
   - Python:
-    - Python/Basics.md
-    - Python/Modules and Packages.md
-    - Python/Object Oriented Programming.md
-    - Python/Advanced Python.md
-    - Python/Handling Database.md
-    - Python/Network and Security.md
-    - Python/Web Scraping.md
+    - Python Basics:
+      - Python/Python Basics/Python Language Fundamentals.md
+      - Python/Python Basics/Operators.md
+      - Python/Python Basics/Control Flow.md
+      - Python/Python Basics/Data Structures.md
+      - Python/Python Basics/Strings.md
+      - Python/Python Basics/Functions and Code Reuse.md
+      - Python/Python Basics/Basic Error Handling.md
+      - Python/Python Basics/The Python Environment.md
+      - Python/Python Basics/Introdicion to OOPs.md
+      - Python/Python Basics/Basic Built-in Functions and Libraries.md
+    - Python Intermediate:
+      - Python/Python Intermediate/Intermediate Syntax and Structures.md
+      - Python/Python Intermediate/Functions and Scope.md
+      - Python/Python Intermediate/Modules and Packages.md
+      - Python/Python Intermediate/Error Handling.md
+      - Python/Python Intermediate/File Handling.md
+      - Python/Python Intermediate/Data Handling and Standard Library.md
+      - Python/Python Intermediate/Classes and OOP Basics.md
+    - Python Advanced:
+      - Advanced Functions:
+        - Python/Python Advanced/Advanced Functions/Closures.md
+        - Python/Python Advanced/Advanced Functions/Decorators.md
+        - Python/Python Advanced/Advanced Functions/Higher Order Functions.md
+        - Python/Python Advanced/Advanced Functions/Lambda Functions.md
+        - Python/Python Advanced/Advanced Functions/Partial Functions.md
+        - Python/Python Advanced/Advanced Functions/Function Annotations and Type Hints.md
+        - Python/Python Advanced/Advanced Functions/Parameter Unpacking.md
+        - Python/Python Advanced/Advanced Functions/Variable Scope and nonlocal Keywords.md
+        - Python/Python Advanced/Advanced Functions/Callable Objects.md
+      - Object Oriented Programming:
+        - Python/Python Advanced/Object Oriented Programming/@property Decorators.md
+        - Python/Python Advanced/Object Oriented Programming/Abstract Base Classes.md
+        - Python/Python Advanced/Object Oriented Programming/Class Methods and Static Methods.md
+        - Python/Python Advanced/Object Oriented Programming/Dunder or Magic Methods.md
+        - Python/Python Advanced/Object Oriented Programming/Encapsulation and Access Modifiers.md
+        - Python/Python Advanced/Object Oriented Programming/Inheritance and Multiple Inheritance.md
+        - Python/Python Advanced/Object Oriented Programming/Method Resolution Order.md
+        - Python/Python Advanced/Object Oriented Programming/Polymorphism.md
+      - Meta Programming:
+        - Python/Python Advanced/Meta Programming/Metaclasses.md
+        - Python/Python Advanced/Meta Programming/type() for Dynamic Class Creation.md
+        - Python/Python Advanced/Meta Programming/Inspect Module for Introspection.md
+        - Python/Python Advanced/Meta Programming/Monkey Patching.md
+        - Python/Python Advanced/Meta Programming/Code Generations using exec() and eval().md
+        - Python/Python Advanced/Meta Programming/Class Decorators.md
+      - Iterarators, Generators and Coroutines:
+        - Python/Python Advanced/Iterarators, Generators and Coroutines/Custom Iterators.md
+      - Concurrency and Parallelism:
+        - Python/Python Advanced/Concurrency and Parallelism/Threading.md
+      - Data Model and Customization:
+        - Python/Python Advanced/Data Model and Customization/Custom Containers.md
+      - Functional Programming:
+        - Python/Python Advanced/Functional Programming/Map, Filter and Reduce.md
+      - Modules and Packaging:
+        - Python/Python Advanced/Modules and Packaging/Creating Modules and Packages.md
+      - Memory Management and Performance:
+        - Python/Python Advanced/Memory Management and Performance/Reference Counting.md
+      - Typing and Static Analysis:
+        - Python/Python Advanced/Typing and Static Analysis/Type Hints and Annotations.md
+      - File and Data Handling:
+        - Python/Python Advanced/File and Data Handling/File IO.md
+      - Network and Web Programming:
+        - Python/Python Advanced/Network and Web Programming/HTTP Requests.md
+      - Testing and Debugging:
+        - Python/Python Advanced/Testing and Debugging/Unit Testing.md
+      - Python Internals:
+        - Python/Python Advanced/Python Internals/Global Interpreter Lock.md
+      - Security and Safe Practices:
+        - Python/Python Advanced/Security and Safe Practices/Managing Secrets.md
+      - New Python Features and Enhancements:
+        - Python/Python Advanced/New Python Features and Enhancements/New Syntax and Features.md
+      - Advanced Use Cases and Applications:
+        - Python/Python Advanced/Advanced Use Cases and Applications/Building Command Line Interfaces.md
   - Programming:
     - Data Structures:
       - Programming/Data Structures/List.md
@@ -100,7 +167,18 @@ nav:
     - Deep Learning/Optimization Algorithms.md
     - Deep Learning/Training Deep Networks.md
     - Computer Vision:
-      - Deep Learning/Image Classification.md 
+      - CNN Architectures:
+        - Deep Learning/LeNet-5.md
+        - Deep Learning/AlexNet.md
+        - Deep Learning/VGGNet.md
+        - Deep Learning/GoogLeNet-Inception.md
+        - Deep Learning/ResNet.md
+        - Deep Learning/MobileNet.md
+        - Deep Learning/XceptionNet.md
+        - Deep Learning/SqueezeNet.md
+        - Deep Learning/DenseNet.md
+        - Deep Learning/ShuffleNet.md
+        - Deep Learning/Cnn Evolution.md
       - Deep Learning/Object Detection.md 
       - Deep Learning/Segmentation.md
       - Deep Learning/Keypoint Detection.md
@@ -130,6 +208,11 @@ nav:
     - DevOps/Docker.md
     - DevOps/Mlflow.md
     - DevOps/ZenML.md
+    - AI Inference & Acceleration Stack:
+      - DevOps/CUDA and cuDNN.md
+      - DevOps/Inference Optimization Engines.md
+      - DevOps/Inference Serving Frameworks.md
+      - DevOps/Edge Hardware Platform.md
   - Data Engineering:
     - Data Engineering/Spark.md
     - Data Engineering/Kafka.md

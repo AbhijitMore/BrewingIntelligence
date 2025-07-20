@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/14.%20Z%20Algorithm/">
+        <link rel="canonical" href="https://abhijitmore.github.io/BrewingIntelligence/Programming/DSA%20Patterns/12.%20String%20Matching%20Patterns/">
       
       
-        <link rel="prev" href="../13.%20Rabin-Karp%20Algorithm/">
+        <link rel="prev" href="../11.%20Segment%20Tree/">
       
       
-        <link rel="next" href="../15.%20Boyer-Moore%20Voting%20Algorithm/">
+        <link rel="next" href="../13.%20Boyer-Moore%20Voting%20Algorithm/">
       
       
       <link rel="icon" href="../../../assets/brain-solid.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>14. Z Algorithm - Brewing Intelligence</title>
+        <title>12. String Matching ALgorithms - Brewing Intelligence</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#14-z-algorithm" class="md-skip">
+        <a href="#12-string-matching-algorithms" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              14. Z Algorithm
+              12. String Matching ALgorithms
             
           </span>
         </div>
@@ -3336,48 +3336,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../12.%20KMP%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    12. KMP Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../13.%20Rabin-Karp%20Algorithm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    13. Robin-Karp Algorithm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -3390,15 +3348,81 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    12. String Matching ALgorithms
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    14. Z Algorithm
+    12. String Matching ALgorithms
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-kmp-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. KMP Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-robin-karp-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 . Robin Karp Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-z-algorith" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Z-algorith
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-aho-corasick-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Aho - Corasick Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3412,7 +3436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../15.%20Boyer-Moore%20Voting%20Algorithm/" class="md-nav__link">
+      <a href="../13.%20Boyer-Moore%20Voting%20Algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6068,6 +6092,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-kmp-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. KMP Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-robin-karp-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 . Robin Karp Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-z-algorith" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Z-algorith
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-aho-corasick-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Aho - Corasick Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6084,7 +6152,11 @@
   
 
 
-<h1 id="14-z-algorithm">14. Z Algorithm</h1>
+<h1 id="12-string-matching-algorithms">12. String Matching ALgorithms</h1>
+<h2 id="1-kmp-algorithm">1. KMP Algorithm</h2>
+<h2 id="2-robin-karp-algorithm">2 . Robin Karp Algorithm</h2>
+<h2 id="3-z-algorith">3. Z-algorith</h2>
+<h2 id="4-aho-corasick-algorithm">4. Aho - Corasick Algorithm</h2>
 
 
 
@@ -6114,7 +6186,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../13.%20Rabin-Karp%20Algorithm/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 13. Robin-Karp Algorithm">
+          <a href="../11.%20Segment%20Tree/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 11. Segment Tree">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -6124,14 +6196,14 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                13. Robin-Karp Algorithm
+                11. Segment Tree
               </div>
             </div>
           </a>
         
         
           
-          <a href="../15.%20Boyer-Moore%20Voting%20Algorithm/" class="md-footer__link md-footer__link--next" aria-label="Next: 15. Boyer-Moore Voting Algorithm">
+          <a href="../13.%20Boyer-Moore%20Voting%20Algorithm/" class="md-footer__link md-footer__link--next" aria-label="Next: 15. Boyer-Moore Voting Algorithm">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next

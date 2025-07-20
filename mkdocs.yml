@@ -110,10 +110,8 @@ nav:
       - Programming/DSA Patterns/09. Backtracking.md
       - Programming/DSA Patterns/10. Union Find (Disjoint Set Union - DSU).md
       - Programming/DSA Patterns/11. Segment Tree.md
-      - Programming/DSA Patterns/12. KMP Algorithm.md
-      - Programming/DSA Patterns/13. Rabin-Karp Algorithm.md
-      - Programming/DSA Patterns/14. Z Algorithm.md
-      - Programming/DSA Patterns/15. Boyer-Moore Voting Algorithm.md
+      - Programming/DSA Patterns/12. String Matching Patterns.md
+      - Programming/DSA Patterns/13. Boyer-Moore Voting Algorithm.md
     - Design Patterns:
       - Programming/Design Patterns/Behavioural.md
       - Programming/Design Patterns/Creational.md

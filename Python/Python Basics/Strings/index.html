@@ -1,0 +1,6298 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://abhijitmore.github.io/BrewingIntelligence/Python/Python%20Basics/Strings/">
+      
+      
+        <link rel="prev" href="../Data%20Structures/">
+      
+      
+        <link rel="next" href="../Functions%20and%20Code%20Reuse/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/brain-solid.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Strings - Brewing Intelligence</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Epilogue:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Epilogue";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#strings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Brewing Intelligence" class="md-header__button md-logo" aria-label="Brewing Intelligence" data-md-component="logo">
+      
+  <img src="../../../assets/brain-solid.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Brewing Intelligence
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Strings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AbhijitMore/BrewingIntelligence-source/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AbhijitMore/BrewingIntelligence-source
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Programming/" class="md-tabs__link">
+          
+  
+  
+  Programming
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Brewing Intelligence" class="md-nav__button md-logo" aria-label="Brewing Intelligence" data-md-component="logo">
+      
+  <img src="../../../assets/brain-solid.svg" alt="logo">
+
+    </a>
+    Brewing Intelligence
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AbhijitMore/BrewingIntelligence-source/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AbhijitMore/BrewingIntelligence-source
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Python%20Language%20Fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Language Fundamentals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Operators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Control%20Flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Control Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data%20Structures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Built-in Data Structures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strings
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-python-string-actually-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a Python string actually is
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-strings-all-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating strings — all forms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating strings — all forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-prefixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String prefixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concatenation-three-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concatenation — three approaches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexing-and-slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indexing and slicing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Indexing and slicing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slicing-vs-indexing-for-interviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slicing vs indexing for interviews
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#immutability-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immutability in depth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Immutability in depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-strings-from-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building strings from characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-and-unicode-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Character and Unicode operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Character and Unicode operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case conversion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-methods-comprehensive-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String methods — comprehensive reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="String methods — comprehensive reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-and-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search and test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-and-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Split and partition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strip-and-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strip and padding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-and-translate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replace and translate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join-the-inverse-of-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Join (the inverse of split)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-formatting-four-generations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String formatting — four generations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="String formatting — four generations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-f-strings-preferred-36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. f-strings (preferred, 3.6+)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-strformat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. str.format()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-interpolation-legacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. % interpolation (legacy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-template-strings-safe-substitution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Template strings (safe substitution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparisons-and-sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparisons and sorting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encoding-and-decoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encoding and decoding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions-re" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regular expressions (re)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standard-library-helpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standard library helpers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interview-patterns-multiple-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interview patterns — multiple approaches
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interview patterns — multiple approaches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#palindrome-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Palindrome check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anagram-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anagram detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#longest-substring-without-repeating-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Longest substring without repeating characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valid-parentheses-bracket-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valid parentheses / bracket matching
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interview-traps-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interview traps (quick reference)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mental-model-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mental model checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Functions%20and%20Code%20Reuse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions and Code Reuse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Basic%20Error%20Handling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Error Handling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Python%20Environment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Python Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Introdicion%20to%20OOPs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction to OOPs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Basic%20Built-in%20Functions%20and%20Libraries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Built-in Functions and Libraries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Intermediate
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python Intermediate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Intermediate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Intermediate/Intermediate%20Syntax%20and%20Structures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intermediate Syntax and Structures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Intermediate/Functions%20and%20Scope/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions and Scope
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Intermediate/Modules%20and%20Packages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules and Packages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Intermediate/Error%20Handling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Error Handling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Intermediate/File%20Handling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    File Handling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Intermediate/Data%20Handling%20and%20Standard%20Library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Handling and Standard Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Intermediate/Classes%20and%20OOP%20Basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classes and OOP Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Functions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced Functions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Functions/Closures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Closures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Functions/Decorators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decorators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Functions/Higher%20Order%20Functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Higher Order Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Functions/Lambda%20Functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Functions/Partial%20Functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Partial Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Functions/Function%20Annotations%20and%20Type%20Hints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function Annotations and Type Hints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Functions/Parameter%20Unpacking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parameter Unpacking: *args and **kwargs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Functions/Variable%20Scope%20and%20nonlocal%20Keywords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variable Scope and nonlocal Keywords
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Functions/Callable%20Objects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callable Objects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Oriented Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Object Oriented Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Object%20Oriented%20Programming/%40property%20Decorators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    @property Decorators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Object%20Oriented%20Programming/Abstract%20Base%20Classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Abstract Base Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Object%20Oriented%20Programming/Class%20Methods%20and%20Static%20Methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class Methods and Static Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Object%20Oriented%20Programming/Dunder%20or%20Magic%20Methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dunder or Magic Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Object%20Oriented%20Programming/Encapsulation%20and%20Access%20Modifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Encapsulation and Access Modifiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Object%20Oriented%20Programming/Inheritance%20and%20Multiple%20Inheritance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inheritance and Multiple Inheritance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Object%20Oriented%20Programming/Method%20Resolution%20Order/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Method Resolution Order
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Object%20Oriented%20Programming/Polymorphism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polymorphism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Meta Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Meta%20Programming/Metaclasses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metaclasses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Meta%20Programming/type%28%29%20for%20Dynamic%20Class%20Creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    type() for Dynamic Class Creation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Meta%20Programming/Inspect%20Module%20for%20Introspection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inspect Module for Introspection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Meta%20Programming/Monkey%20Patching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monkey Patching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Meta%20Programming/Code%20Generations%20using%20exec%28%29%20and%20eval%28%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Generation using exec() and eval()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Meta%20Programming/Class%20Decorators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class Decorators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Iterarators%2C%20Generators%20and%20Coroutines/Custom%20Iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Iterators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Concurrency%20and%20Parallelism/Threading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Threading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Data%20Model%20and%20Customization/Custom%20Containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Containers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Functional%20Programming/Map%2C%20Filter%20and%20Reduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map, Filter and Reduce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Modules%20and%20Packaging/Creating%20Modules%20and%20Packages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating Modules and Packages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Memory%20Management%20and%20Performance/Reference%20Counting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Counting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Typing%20and%20Static%20Analysis/Type%20Hints%20and%20Annotations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Type Hints and Annotations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/File%20and%20Data%20Handling/File%20IO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    File IO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Network%20and%20Web%20Programming/HTTP%20Requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTTP Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Testing%20and%20Debugging/Unit%20Testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Python%20Internals/Global%20Interpreter%20Lock/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Interpreter Lock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Security%20and%20Safe%20Practices/Managing%20Secrets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Managing Secrets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/New%20Python%20Features%20and%20Enhancements/New%20Syntax%20and%20Features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New Syntax and Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python%20Advanced/Advanced%20Use%20Cases%20and%20Applications/Building%20Command%20Line%20Interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building Command Line Interfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structures
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Structures
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structures Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/List/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    List (Dynamic Array)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Linked%20List/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linked List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Stack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Deque/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deque (Double-Ended Queue)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Hashing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hashing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tree
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Binary%20Search%20Tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binary Search Tree
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Heap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Trie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Data%20Structures/Graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Graph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithmic Concepts
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algorithmic Concepts
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Algorithmic%20Concepts/Complexity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Time &amp; Space Complexity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Algorithmic%20Concepts/Recursion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Algorithmic%20Concepts/Sorting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sorting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Algorithmic%20Concepts/Searching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Algorithmic%20Concepts/Graph%20Traversals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Graph Traversals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Algorithmic%20Concepts/Dynamic%20Programming%20Intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dynamic Programming — Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Algorithmic%20Concepts/Greedy%20vs%20DP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Greedy vs Dynamic Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA Patterns
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DSA Patterns
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_1" id="__nav_3_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/00.%20Prefix%20Sum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. Prefix Sum &amp; Line Swipe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/01.%20Two%20Pointers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Two Pointer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/03.%20Sliding%20Window/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Sliding-Window
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/09.%20Binary%20Search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Binary Search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/05.%20Cyclic%20Sort/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Cyclic Sort
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/06.%20Bit%20Manipulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Bit Manipulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear & Pointers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linear & Pointers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/02.%20Fast%20and%20Slow%20Pointers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Fast and Slow Pointers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/07.%20Linked%20List/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Linked List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/08.%20Stack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Stack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/04.%20Overlapping%20Intervals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Overlapping Intervals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trees, Graphs & Advanced Structures
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Trees, Graphs & Advanced Structures
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/16.%20Tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Tree
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/17.%20Graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17. Graph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/19.%20Tries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19. Tries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/18.%20Segment%20Tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18. Segment Tree
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_4" id="__nav_3_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithms
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algorithms
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/10.%20Greedy%20Algorithm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Greedy Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/11.%20Divide%20and%20Conquer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Divide and Conquer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/12.%20Backtracking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Backtracking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/13.%20Dynamic%20Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Dynamic Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/14.%20K-way%20Merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. K-way Merge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/15.%20Heaps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. Heaps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/20.%20String%20Matching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20. String Matching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/21.%20Math%20and%20Geometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21. Math and Geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_5" id="__nav_3_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capstone
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capstone
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Patterns/22.%20Challenge%20Yourself/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22. Challenge Yourself
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA Sheets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DSA Sheets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Sheets/Blind%2075/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blind 75
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Sheets/Grind%2075/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grind 75
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Sheets/LeetCode%20Top%20150/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LeetCode Top 150
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/DSA%20Sheets/NeetCode%20150/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NeetCode 150
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://abhijitmore.github.io/DSA-Venn-Explorer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA Venn Explorer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Patterns
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Design Patterns
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Design%20Patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Patterns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Design%20Patterns/Creational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creational Design Patterns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Design%20Patterns/Structural/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Structural Design Patterns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Programming/Design%20Patterns/Behavioural/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Behavioural Design Patterns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-python-string-actually-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a Python string actually is
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-strings-all-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating strings — all forms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating strings — all forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-prefixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String prefixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concatenation-three-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concatenation — three approaches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexing-and-slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indexing and slicing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Indexing and slicing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slicing-vs-indexing-for-interviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slicing vs indexing for interviews
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#immutability-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immutability in depth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Immutability in depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-strings-from-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building strings from characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-and-unicode-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Character and Unicode operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Character and Unicode operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case conversion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-methods-comprehensive-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String methods — comprehensive reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="String methods — comprehensive reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-and-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search and test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-and-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Split and partition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strip-and-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strip and padding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-and-translate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replace and translate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join-the-inverse-of-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Join (the inverse of split)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-formatting-four-generations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String formatting — four generations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="String formatting — four generations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-f-strings-preferred-36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. f-strings (preferred, 3.6+)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-strformat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. str.format()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-interpolation-legacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. % interpolation (legacy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-template-strings-safe-substitution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Template strings (safe substitution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparisons-and-sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparisons and sorting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encoding-and-decoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encoding and decoding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions-re" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regular expressions (re)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standard-library-helpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standard library helpers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interview-patterns-multiple-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interview patterns — multiple approaches
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interview patterns — multiple approaches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#palindrome-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Palindrome check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anagram-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anagram detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#longest-substring-without-repeating-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Longest substring without repeating characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valid-parentheses-bracket-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valid parentheses / bracket matching
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interview-traps-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interview traps (quick reference)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mental-model-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mental model checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="strings">Strings<a class="headerlink" href="#strings" title="Permanent link">#</a></h1>
+<p>Strings are <strong>immutable sequences of Unicode code points</strong>. They appear in nearly every interview — parsing, two pointers, sliding window, hash map, and trie problems all start with comfortable string manipulation. This page covers creation, slicing, methods, formatting, encoding, and multiple solution approaches for common patterns.</p>
+<div class="admonition tip">
+<p class="admonition-title">How to use this page</p>
+<p>Know slicing, <code>split</code>/<code>join</code>, and character indexing cold. Drill <strong>Interview traps</strong> before string-heavy mocks. Prerequisites: <a href="../Python%20Language%20Fundamentals/">Python Language Fundamentals</a>, <a href="../Operators/">Operators</a>, <a href="../Control%20Flow/">Control Flow</a>.</p>
+</div>
+<details class="abstract">
+<summary>At a glance</summary>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Track</strong></td>
+<td>Python Basics</td>
+</tr>
+<tr>
+<td><strong>Sections</strong></td>
+<td>12 major topics</td>
+</tr>
+<tr>
+<td><strong>Outline</strong></td>
+<td>Use the right-hand TOC to jump</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Topics:</strong> What a Python string actually is · Creating strings — all forms · Indexing and slicing · Immutability in depth · Character and Unicode operations · String methods — comprehensive reference · String formatting — four generations · Comparisons and sorting · … (+4 more)</p>
+<ol>
+<li>What a Python string actually is</li>
+<li>Creating strings — all forms</li>
+<li>Indexing and slicing</li>
+<li>Immutability in depth</li>
+<li>Character and Unicode operations</li>
+<li>String methods — comprehensive reference</li>
+<li>String formatting — four generations</li>
+<li>Comparisons and sorting</li>
+<li>Encoding and decoding</li>
+<li>Regular expressions (<code>re</code>)</li>
+<li>Standard library helpers</li>
+<li>Interview patterns — multiple approaches</li>
+</ol>
+</details>
+<hr />
+<h2 id="what-a-python-string-actually-is">What a Python string actually is<a class="headerlink" href="#what-a-python-string-actually-is" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Implication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Immutable</td>
+<td>Every "change" creates a new string</td>
+</tr>
+<tr>
+<td>Sequence</td>
+<td>Supports indexing, slicing, iteration, <code>len</code></td>
+</tr>
+<tr>
+<td>Unicode</td>
+<td><code>str</code> holds Unicode code points, not bytes</td>
+</tr>
+<tr>
+<td>Hashable</td>
+<td>Can be dict key / set element (if contents fixed)</td>
+</tr>
+</tbody>
+</table>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;café&quot;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>        <span class="c1"># 4 characters (not bytes)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>       <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+</span></code></pre></div>
+<p>Internally CPython may use compact representations (1/2/4 bytes per character depending on content) — you don't control this, but <strong>never assume one char = one byte</strong>.</p>
+<hr />
+<h2 id="creating-strings-all-forms">Creating strings — all forms<a class="headerlink" href="#creating-strings-all-forms" title="Permanent link">#</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">s1</span> <span class="o">=</span> <span class="s2">&quot;hello&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">s2</span> <span class="o">=</span> <span class="s1">&#39;world&#39;</span>              <span class="c1"># equivalent quotes</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">s3</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;multi</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="s2">line&quot;&quot;&quot;</span>                   <span class="c1"># preserves newlines</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">s4</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;also</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="s1">valid&#39;&#39;&#39;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">s5</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>              <span class="c1"># &quot;42&quot;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">s6</span> <span class="o">=</span> <span class="nb">str</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>          <span class="c1"># &quot;[1, 2]&quot; — repr-like for some types</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">s7</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span> <span class="o">*</span> <span class="mi">5</span>              <span class="c1"># &quot;xxxxx&quot;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">s8</span> <span class="o">=</span> <span class="s2">&quot;-&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">])</span> <span class="c1"># &quot;a-b&quot;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">raw</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\new\folder&quot;</span>    <span class="c1"># backslashes literal</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">raw2</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;not a valid \ escape at end</span><span class="se">\&quot;</span><span class="s2">  # SyntaxError — can&#39;t end with odd backslash</span>
+</span></code></pre></div>
+<h3 id="string-prefixes">String prefixes<a class="headerlink" href="#string-prefixes" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(none)</td>
+<td>Normal string</td>
+<td><code>"hello"</code></td>
+</tr>
+<tr>
+<td><code>r</code> / <code>R</code></td>
+<td>Raw — <code>\n</code> is backslash + n</td>
+<td><code>r"\n"</code> → <code>'\\n'</code></td>
+</tr>
+<tr>
+<td><code>f</code> / <code>F</code></td>
+<td>f-string — embed expressions</td>
+<td><code>f"{x}"</code></td>
+</tr>
+<tr>
+<td><code>fr</code> / <code>rf</code></td>
+<td>Raw f-string</td>
+<td><code>fr"C:\{name}"</code></td>
+</tr>
+<tr>
+<td><code>b</code> / <code>B</code></td>
+<td>Bytes literal — <strong>not str</strong></td>
+<td><code>b"abc"</code></td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td>Legacy Unicode prefix (no-op in Py3)</td>
+<td><code>u"hi"</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="concatenation-three-approaches">Concatenation — three approaches<a class="headerlink" href="#concatenation-three-approaches" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 1. + operator — fine for 2-3 pieces</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">greeting</span> <span class="o">=</span> <span class="s2">&quot;Hello, &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># 2. join — O(n) total for many pieces (preferred)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="s2">&quot;-&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># 3. f-string / format — when building formatted output</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Interview trap — O(n²) concatenation</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># SLOW: each += allocates new string</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">chars</span><span class="p">:</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">result</span> <span class="o">+=</span> <span class="n">ch</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1"># FAST: O(n)</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">chars</span><span class="p">)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># Also good for list of strings</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<hr />
+<h2 id="indexing-and-slicing">Indexing and slicing<a class="headerlink" href="#indexing-and-slicing" title="Permanent link">#</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>       <span class="c1"># &#39;p&#39;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>      <span class="c1"># &#39;n&#39; — last char</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>      <span class="c1"># &#39;o&#39;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>     <span class="c1"># &#39;yth&#39;   — start inclusive, stop exclusive</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">s</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>      <span class="c1"># &#39;pyt&#39;   — from beginning</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span>      <span class="c1"># &#39;hon&#39;   — to end</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">s</span><span class="p">[:]</span>       <span class="c1"># full copy (new string)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">s</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>     <span class="c1"># &#39;pto&#39;   — step 2</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>    <span class="c1"># &#39;nohtyp&#39; — reverse</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># step applies across slice bounds</span>
+</span></code></pre></div>
+<p>Out-of-range <strong>index</strong> raises <code>IndexError</code>; out-of-range <strong>slice</strong> returns empty string or partial:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="s2">&quot;&quot;</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>       <span class="c1"># IndexError</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="s2">&quot;&quot;</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>     <span class="c1"># &quot;&quot; — no error</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="s2">&quot;abc&quot;</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>   <span class="c1"># IndexError</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="s2">&quot;abc&quot;</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">100</span><span class="p">]</span>  <span class="c1"># &quot;bc&quot;</span>
+</span></code></pre></div>
+<h3 id="slicing-vs-indexing-for-interviews">Slicing vs indexing for interviews<a class="headerlink" href="#slicing-vs-indexing-for-interviews" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Use when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>s[i]</code></td>
+<td>Single character access</td>
+</tr>
+<tr>
+<td><code>s[lo:hi]</code></td>
+<td>Substring extraction</td>
+</tr>
+<tr>
+<td><code>s[::-1]</code></td>
+<td>Reverse (creates copy)</td>
+</tr>
+<tr>
+<td>Two pointers</td>
+<td>In-place logic without copying</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="immutability-in-depth">Immutability in depth<a class="headerlink" href="#immutability-in-depth" title="Permanent link">#</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;hello&quot;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># s[0] = &quot;H&quot;   # TypeError</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>  <span class="c1"># new string; name rebound</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># original &quot;hello&quot; object may be garbage-collected if unreferenced</span>
+</span></code></pre></div>
+<p>Methods that "modify" strings return <strong>new</strong> strings:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="s2">&quot;  hi  &quot;</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>    <span class="c1"># &quot;hi&quot; — original unchanged</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="s2">&quot;a,b&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>    <span class="c1"># [&quot;a&quot;, &quot;b&quot;]</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="s2">&quot;x&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">)</span>  <span class="c1"># &quot;y&quot;</span>
+</span></code></pre></div>
+<h3 id="building-strings-from-characters">Building strings from characters<a class="headerlink" href="#building-strings-from-characters" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Approach 1: list + join (preferred for mutable buffer)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">chars</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>        <span class="n">chars</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ch</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">chars</span><span class="p">)</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c1"># Approach 2: io.StringIO (rare in interviews)</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">StringIO</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">buf</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="n">buf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="n">result</span> <span class="o">=</span> <span class="n">buf</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+</span></code></pre></div>
+<hr />
+<h2 id="character-and-unicode-operations">Character and Unicode operations<a class="headerlink" href="#character-and-unicode-operations" title="Permanent link">#</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>       <span class="c1"># 65 — Unicode code point</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">chr</span><span class="p">(</span><span class="mi">65</span><span class="p">)</span>        <span class="c1"># &quot;A&quot;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;é&quot;</span><span class="p">)</span>       <span class="c1"># 233</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ch</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="nb">ord</span><span class="p">(</span><span class="n">ch</span><span class="p">))</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="c1"># ASCII letter → index 0-25</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="n">index</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">ch</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="c1"># Category tests</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="s2">&quot;a&quot;</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span>    <span class="c1"># True</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="s2">&quot;3&quot;</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span>    <span class="c1"># True — any Unicode digit</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="s2">&quot;3&quot;</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">()</span>  <span class="c1"># stricter</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="s2">&quot; </span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">isspace</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="case-conversion">Case conversion<a class="headerlink" href="#case-conversion" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="s2">&quot;Hello&quot;</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>    <span class="c1"># &quot;hello&quot;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="s2">&quot;Hello&quot;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>    <span class="c1"># &quot;HELLO&quot;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="s2">&quot;Hello&quot;</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>    <span class="c1"># &quot;Hello&quot;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="s2">&quot;Hello&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>  <span class="c1"># &quot;Hello&quot;</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="s2">&quot;Hello&quot;</span><span class="o">.</span><span class="n">casefold</span><span class="p">()</span>    <span class="c1"># aggressive lower — best for case-insensitive compare</span>
+</span></code></pre></div>
+<p>For case-insensitive equality: <code>a.casefold() == b.casefold()</code>.</p>
+<hr />
+<h2 id="string-methods-comprehensive-reference">String methods — comprehensive reference<a class="headerlink" href="#string-methods-comprehensive-reference" title="Permanent link">#</a></h2>
+<h3 id="search-and-test">Search and test<a class="headerlink" href="#search-and-test" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Returns</th>
+<th>On miss</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.find(sub)</code></td>
+<td>index</td>
+<td><code>-1</code></td>
+<td>O(n·m) naive</td>
+</tr>
+<tr>
+<td><code>.rfind(sub)</code></td>
+<td>last index</td>
+<td><code>-1</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>.index(sub)</code></td>
+<td>index</td>
+<td><code>ValueError</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>.count(sub)</code></td>
+<td>int count</td>
+<td><code>0</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>.startswith(prefix)</code></td>
+<td>bool</td>
+<td></td>
+<td>tuple of prefixes OK</td>
+</tr>
+<tr>
+<td><code>.endswith(suffix)</code></td>
+<td>bool</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>sub in s</code></td>
+<td>bool</td>
+<td></td>
+<td>idiomatic membership</td>
+</tr>
+</tbody>
+</table>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="s2">&quot;hello&quot;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;ll&quot;</span><span class="p">)</span>      <span class="c1"># 2</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="s2">&quot;hello&quot;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;zz&quot;</span><span class="p">)</span>      <span class="c1"># -1</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="s2">&quot;hello&quot;</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;ll&quot;</span><span class="p">)</span>     <span class="c1"># 2</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="s2">&quot;hello&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;l&quot;</span><span class="p">)</span>      <span class="c1"># 2</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="s2">&quot;file.txt&quot;</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">&quot;.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;.md&quot;</span><span class="p">))</span>
+</span></code></pre></div>
+<h3 id="split-and-partition">Split and partition<a class="headerlink" href="#split-and-partition" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.split(sep=None)</code></td>
+<td>Split on whitespace (default) or sep</td>
+</tr>
+<tr>
+<td><code>.split(sep, maxsplit)</code></td>
+<td>Limit splits</td>
+</tr>
+<tr>
+<td><code>.rsplit(sep, maxsplit)</code></td>
+<td>Split from right</td>
+</tr>
+<tr>
+<td><code>.splitlines(keepends=False)</code></td>
+<td>On <code>\n</code>, <code>\r\n</code>, etc.</td>
+</tr>
+<tr>
+<td><code>.partition(sep)</code></td>
+<td><code>(before, sep, after)</code> — one split</td>
+</tr>
+<tr>
+<td><code>.rpartition(sep)</code></td>
+<td>From right</td>
+</tr>
+</tbody>
+</table>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="s2">&quot;a  b   c&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>           <span class="c1"># [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;] — any whitespace</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="s2">&quot;a,b,c&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>           <span class="c1"># [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="s2">&quot;key=value=extra&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>   <span class="c1"># [&#39;key&#39;, &#39;value=extra&#39;]</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="s2">&quot;key=value=extra&quot;</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)</span>  <span class="c1"># (&#39;key&#39;, &#39;=&#39;, &#39;value=extra&#39;)</span>
+</span></code></pre></div>
+<p><strong>When to use which:</strong></p>
+<ul>
+<li><code>split(",", 1)</code> — exactly one delimiter (key=value)</li>
+<li><code>partition("=")</code> — need separator in result tuple</li>
+<li><code>split()</code> — tokenizing whitespace-separated input</li>
+</ul>
+<h3 id="strip-and-padding">Strip and padding<a class="headerlink" href="#strip-and-padding" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="s2">&quot;  hello  &quot;</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>       <span class="c1"># &quot;hello&quot;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="s2">&quot;  hello  &quot;</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>      <span class="c1"># &quot;hello  &quot;</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="s2">&quot;__hello__&quot;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)</span>   <span class="c1"># &quot;hello&quot;</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="s2">&quot;42&quot;</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>             <span class="c1"># &quot;00042&quot;</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="s2">&quot;hi&quot;</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">)</span>      <span class="c1"># &quot;---hi-----&quot;</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="s2">&quot;hi&quot;</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="s2">&quot;hi&quot;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="replace-and-translate">Replace and translate<a class="headerlink" href="#replace-and-translate" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="s2">&quot;aba&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">)</span>           <span class="c1"># &quot;xbx&quot;</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="s2">&quot;aba&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>        <span class="c1"># &quot;xba&quot; — max replacements</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="s2">&quot;hello&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;L&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="n">table</span> <span class="o">=</span> <span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s2">&quot;aeiou&quot;</span><span class="p">,</span> <span class="s2">&quot;12345&quot;</span><span class="p">)</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="s2">&quot;hello&quot;</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>          <span class="c1"># &quot;h2ll4&quot;</span>
+</span></code></pre></div>
+<h3 id="join-the-inverse-of-split">Join (the inverse of split)<a class="headerlink" href="#join-the-inverse-of-split" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">])</span>     <span class="c1"># &quot;a,b,c&quot;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;i&quot;</span><span class="p">])</span>           <span class="c1"># &quot;Hi&quot;</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="s2">&quot;-&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">)</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="c1"># join requires str elements</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+</span></code></pre></div>
+<h3 id="validation-methods">Validation methods<a class="headerlink" href="#validation-methods" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="s2">&quot;42&quot;</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="s2">&quot;42.5&quot;</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span>     <span class="c1"># False</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="s2">&quot;abc&quot;</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="s2">&quot;abc123&quot;</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="s2">&quot;ABC&quot;</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">isspace</span><span class="p">()</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="s2">&quot;0123&quot;</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">()</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="s2">&quot;012b&quot;</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">()</span>   <span class="c1"># False — hex digit</span>
+</span></code></pre></div>
+<hr />
+<h2 id="string-formatting-four-generations">String formatting — four generations<a class="headerlink" href="#string-formatting-four-generations" title="Permanent link">#</a></h2>
+<h3 id="1-f-strings-preferred-36">1. f-strings (preferred, 3.6+)<a class="headerlink" href="#1-f-strings-preferred-36" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">name</span><span class="p">,</span> <span class="n">score</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mf">95.5</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> scored </span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%&quot;</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="c1"># Expressions allowed</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">=}</span><span class="s2">&quot;</span>              <span class="c1"># &quot;nums[0]=10&quot; debug syntax (3.8+)</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span> 
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">x</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="mi">0</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="c1"># Format spec mini-language</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">10</span><span class="si">}</span><span class="s2">&quot;</span>       <span class="c1"># width 10</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">&gt;10</span><span class="si">}</span><span class="s2">&quot;</span>      <span class="c1"># right align</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2">&quot;</span>      <span class="c1"># left align</span>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">^10</span><span class="si">}</span><span class="s2">&quot;</span>      <span class="c1"># center</span>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">010d</span><span class="si">}</span><span class="s2">&quot;</span>     <span class="c1"># zero-pad int</span>
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span>      <span class="c1"># 2 decimal places</span>
+</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">08b</span><span class="si">}</span><span class="s2">&quot;</span>      <span class="c1"># binary, width 8, zero-pad</span>
+</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span>        <span class="c1"># thousands separator 1,000,000</span>
+</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pct</span><span class="si">:</span><span class="s2">.1%</span><span class="si">}</span><span class="s2">&quot;</span>    <span class="c1"># percentage</span>
+</span></code></pre></div>
+<h3 id="2-strformat">2. <code>str.format()</code><a class="headerlink" href="#2-strformat" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> scored </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="p">)</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="s2">&quot;</span><span class="si">{name}</span><span class="s2"> scored </span><span class="si">{score:.1f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="n">score</span><span class="p">)</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2"> </span><span class="si">{1}</span><span class="s2"> </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">)</span>   <span class="c1"># positional</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="s2">&quot;</span><span class="si">{name}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format_map</span><span class="p">({</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">})</span>
+</span></code></pre></div>
+<h3 id="3-interpolation-legacy">3. <code>%</code> interpolation (legacy)<a class="headerlink" href="#3-interpolation-legacy" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> scored </span><span class="si">%.1f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="p">)</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="s2">&quot;</span><span class="si">%(name)s</span><span class="s2"> scored </span><span class="si">%(score).1f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span> <span class="s2">&quot;score&quot;</span><span class="p">:</span> <span class="n">score</span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="4-template-strings-safe-substitution">4. Template strings (safe substitution)<a class="headerlink" href="#4-template-strings-safe-substitution" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">string</span><span class="w"> </span><span class="kn">import</span> <span class="n">Template</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">Template</span><span class="p">(</span><span class="s2">&quot;$name scored $score&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">substitute</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">95</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Interview default:</strong> f-strings unless working with legacy code.</p>
+<hr />
+<h2 id="comparisons-and-sorting">Comparisons and sorting<a class="headerlink" href="#comparisons-and-sorting" title="Permanent link">#</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="s2">&quot;apple&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;banana&quot;</span>    <span class="c1"># True — lexicographic Unicode order</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="s2">&quot;10&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;2&quot;</span>            <span class="c1"># True — string comparison, not numeric!</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="s2">&quot;Z&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;a&quot;</span>             <span class="c1"># True — uppercase before lowercase in ASCII</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="nb">sorted</span><span class="p">([</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;bat&quot;</span><span class="p">,</span> <span class="s2">&quot;rat&quot;</span><span class="p">])</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="nb">sorted</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">)</span>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="nb">sorted</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">)</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="nb">sorted</span><span class="p">(</span><span class="n">num_strings</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Locale-aware sorting requires <code>locale.strxfrm</code> or third-party libraries — not typical in interviews.</p>
+<hr />
+<h2 id="encoding-and-decoding">Encoding and decoding<a class="headerlink" href="#encoding-and-decoding" title="Permanent link">#</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;café&quot;</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">b</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>       <span class="c1"># bytes: b&#39;caf\xc3\xa9&#39;</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="n">s2</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>      <span class="c1"># str: &quot;café&quot;</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>    <span class="c1"># 4 characters</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>    <span class="c1"># 5 bytes in UTF-8</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="c1"># Errors handling</span>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="sa">b</span><span class="s2">&quot;</span><span class="se">\xff</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>                    <span class="c1"># UnicodeDecodeError</span>
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="sa">b</span><span class="s2">&quot;</span><span class="se">\xff</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;replace&quot;</span><span class="p">)</span>  <span class="c1"># &#39;\ufffd&#39;</span>
+</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="sa">b</span><span class="s2">&quot;</span><span class="se">\xff</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>   <span class="c1"># &#39;&#39;</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>str</code></td>
+<td>Text, interview problems</td>
+</tr>
+<tr>
+<td><code>bytes</code></td>
+<td>Binary protocols, file I/O raw</td>
+</tr>
+<tr>
+<td><code>bytearray</code></td>
+<td>Mutable bytes buffer</td>
+</tr>
+</tbody>
+</table>
+<p>Never mix <code>str</code> and <code>bytes</code> without explicit encode/decode.</p>
+<hr />
+<h2 id="regular-expressions-re">Regular expressions (<code>re</code>)<a class="headerlink" href="#regular-expressions-re" title="Permanent link">#</a></h2>
+<p>When string methods aren't enough:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;^\d+&quot;</span><span class="p">,</span> <span class="s2">&quot;42abc&quot;</span><span class="p">)</span>           <span class="c1"># match at start</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d+&quot;</span><span class="p">,</span> <span class="s2">&quot;abc42def&quot;</span><span class="p">)</span>        <span class="c1"># first anywhere</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d+&quot;</span><span class="p">,</span> <span class="s2">&quot;a1b22&quot;</span><span class="p">)</span>         <span class="c1"># [&#39;1&#39;, &#39;22&#39;]</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\s+&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>   <span class="c1"># collapse whitespace</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;,\s*&quot;</span><span class="p">,</span> <span class="s2">&quot;a, b, c&quot;</span><span class="p">)</span>         <span class="c1"># [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="c1"># Groups</span>
+</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\w+)@(\w+)&quot;</span><span class="p">,</span> <span class="s2">&quot;user@host&quot;</span><span class="p">)</span>
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-23-12"><a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>
+</span><span id="__span-23-13"><a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="c1"># Compile for reuse</span>
+</span><span id="__span-23-14"><a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d+&quot;</span><span class="p">)</span>
+</span><span id="__span-23-15"><a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="n">pattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">&quot;a1b2&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Raw strings (<code>r"..."</code>) avoid double-escaping backslashes in patterns.</p>
+<hr />
+<h2 id="standard-library-helpers">Standard library helpers<a class="headerlink" href="#standard-library-helpers" title="Permanent link">#</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="n">Counter</span><span class="p">(</span><span class="s2">&quot;aabbc&quot;</span><span class="p">)</span>                    <span class="c1"># Counter({&#39;a&#39;: 2, &#39;b&#39;: 2, &#39;c&#39;: 1})</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="n">Counter</span><span class="p">(</span><span class="s2">&quot;aabbc&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>     <span class="c1"># [(&#39;a&#39;, 2), (&#39;b&#39;, 2)]</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="s2">&quot;cba&quot;</span><span class="p">))</span>              <span class="c1"># &quot;abc&quot; — anagram check</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">itertools</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">itertools</span><span class="o">.</span><span class="n">islice</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>  <span class="c1"># first 5 chars lazy</span>
+</span></code></pre></div>
+<hr />
+<h2 id="interview-patterns-multiple-approaches">Interview patterns — multiple approaches<a class="headerlink" href="#interview-patterns-multiple-approaches" title="Permanent link">#</a></h2>
+<h3 id="palindrome-check">Palindrome check<a class="headerlink" href="#palindrome-check" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># Approach 1: slice reverse (after cleaning)</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_palindrome_slice</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>    <span class="n">cleaned</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ch</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">s</span> <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isalnum</span><span class="p">())</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>    <span class="k">return</span> <span class="n">cleaned</span> <span class="o">==</span> <span class="n">cleaned</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="c1"># Approach 2: two pointers (no extra string for in-place on array of chars)</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_palindrome_two_pointer</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>    <span class="n">lo</span><span class="p">,</span> <span class="n">hi</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>    <span class="k">while</span> <span class="n">lo</span> <span class="o">&lt;</span> <span class="n">hi</span><span class="p">:</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>        <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">lo</span><span class="p">]</span> <span class="o">!=</span> <span class="n">s</span><span class="p">[</span><span class="n">hi</span><span class="p">]:</span>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>            <span class="k">return</span> <span class="kc">False</span>
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>        <span class="n">lo</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>        <span class="n">hi</span> <span class="o">-=</span> <span class="mi">1</span>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>    <span class="k">return</span> <span class="kc">True</span>
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="c1"># Approach 3: recursive</span>
+</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_palindrome_rec</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+</span><span id="__span-25-18"><a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-25-19"><a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>        <span class="k">return</span> <span class="kc">True</span>
+</span><span id="__span-25-20"><a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a>    <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">is_palindrome_rec</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></code></pre></div>
+<p>Two pointers is best when skipping non-alphanumeric without building <code>cleaned</code>.</p>
+<h3 id="anagram-detection">Anagram detection<a class="headerlink" href="#anagram-detection" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="c1"># Approach 1: Counter</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_anagram</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>    <span class="k">return</span> <span class="n">Counter</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">==</span> <span class="n">Counter</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="c1"># Approach 2: sort</span>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_anagram_sort</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+</span><span id="__span-26-9"><a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>    <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">==</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>   <span class="c1"># O(n log n)</span>
+</span><span id="__span-26-10"><a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>
+</span><span id="__span-26-11"><a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a><span class="c1"># Approach 3: frequency array (26 letters)</span>
+</span><span id="__span-26-12"><a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_anagram_array</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+</span><span id="__span-26-13"><a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+</span><span id="__span-26-14"><a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>        <span class="k">return</span> <span class="kc">False</span>
+</span><span id="__span-26-15"><a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>    <span class="n">freq</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">26</span>
+</span><span id="__span-26-16"><a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>    <span class="k">for</span> <span class="n">ca</span><span class="p">,</span> <span class="n">cb</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-26-17"><a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a>        <span class="n">freq</span><span class="p">[</span><span class="nb">ord</span><span class="p">(</span><span class="n">ca</span><span class="p">)</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-26-18"><a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>        <span class="n">freq</span><span class="p">[</span><span class="nb">ord</span><span class="p">(</span><span class="n">cb</span><span class="p">)</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)]</span> <span class="o">-=</span> <span class="mi">1</span>
+</span><span id="__span-26-19"><a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a>    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">f</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">freq</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="longest-substring-without-repeating-characters">Longest substring without repeating characters<a class="headerlink" href="#longest-substring-without-repeating-characters" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">length_of_longest_substring</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>    <span class="n">seen</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="n">best</span> <span class="o">=</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="k">for</span> <span class="n">right</span><span class="p">,</span> <span class="n">ch</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>        <span class="k">if</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">seen</span> <span class="ow">and</span> <span class="n">seen</span><span class="p">[</span><span class="n">ch</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">left</span><span class="p">:</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>            <span class="n">left</span> <span class="o">=</span> <span class="n">seen</span><span class="p">[</span><span class="n">ch</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>        <span class="n">seen</span><span class="p">[</span><span class="n">ch</span><span class="p">]</span> <span class="o">=</span> <span class="n">right</span>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>        <span class="n">best</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">best</span><span class="p">,</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>    <span class="k">return</span> <span class="n">best</span>
+</span></code></pre></div>
+<p>Alternative: use <code>set</code> and shrink window while duplicate exists.</p>
+<h3 id="valid-parentheses-bracket-matching">Valid parentheses / bracket matching<a class="headerlink" href="#valid-parentheses-bracket-matching" title="Permanent link">#</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_valid</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>    <span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    <span class="n">pairs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;)&quot;</span><span class="p">:</span> <span class="s2">&quot;(&quot;</span><span class="p">,</span> <span class="s2">&quot;]&quot;</span><span class="p">:</span> <span class="s2">&quot;[&quot;</span><span class="p">,</span> <span class="s2">&quot;}&quot;</span><span class="p">:</span> <span class="s2">&quot;{&quot;</span><span class="p">}</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>    <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>        <span class="k">if</span> <span class="n">ch</span> <span class="ow">in</span> <span class="s2">&quot;([{&quot;</span><span class="p">:</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>            <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>        <span class="k">elif</span> <span class="n">ch</span> <span class="ow">in</span> <span class="s2">&quot;)]}&quot;</span><span class="p">:</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">stack</span> <span class="ow">or</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="n">pairs</span><span class="p">[</span><span class="n">ch</span><span class="p">]:</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>                <span class="k">return</span> <span class="kc">False</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>            <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>    <span class="k">return</span> <span class="ow">not</span> <span class="n">stack</span>
+</span></code></pre></div>
+<p>See <a href="../../../Programming/DSA%20Patterns/08.%20Stack/">Stack</a>.</p>
+<hr />
+<h2 id="interview-traps-quick-reference">Interview traps (quick reference)<a class="headerlink" href="#interview-traps-quick-reference" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Trap</th>
+<th>What goes wrong</th>
+<th>Safe approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+=</code> in loop</td>
+<td>O(n²) concatenation</td>
+<td><code>"".join(parts)</code></td>
+</tr>
+<tr>
+<td><code>"10" &lt; "2"</code></td>
+<td>Lexicographic sort</td>
+<td><code>key=int</code> for numeric strings</td>
+</tr>
+<tr>
+<td>Mutating assumption</td>
+<td>No item assignment on str</td>
+<td>Build new string or list of chars</td>
+</tr>
+<tr>
+<td><code>.split()</code> default</td>
+<td>Splits on <strong>any</strong> whitespace</td>
+<td>Explicit sep when needed</td>
+</tr>
+<tr>
+<td><code>find</code> vs <code>index</code></td>
+<td><code>-1</code> vs exception</td>
+<td>Choose based on control flow</td>
+</tr>
+<tr>
+<td>Unicode vs bytes</td>
+<td><code>TypeError</code> mixing</td>
+<td>Encode/decode explicitly</td>
+</tr>
+<tr>
+<td>Empty string</td>
+<td><code>s[0]</code> raises</td>
+<td>Guard <code>if not s:</code></td>
+</tr>
+<tr>
+<td>Case sensitivity</td>
+<td>missed matches</td>
+<td><code>.lower()</code> or <code>.casefold()</code></td>
+</tr>
+<tr>
+<td><code>isdigit</code> vs <code>isdecimal</code></td>
+<td>Different Unicode sets</td>
+<td>Pick correct validator</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mental-model-checklist">Mental model checklist<a class="headerlink" href="#mental-model-checklist" title="Permanent link">#</a></h2>
+<ol>
+<li>Why is <code>"".join()</code> preferred over <code>+=</code> in a loop?</li>
+<li>What is the difference between <code>split("=", 1)</code> and <code>partition("=")</code>?</li>
+<li>How do you reverse a string without a loop?</li>
+<li>What does <code>ord</code>/<code>chr</code> give you for lowercase letter indexing?</li>
+<li>When would you use <code>bytes</code> instead of <code>str</code>?</li>
+</ol>
+<h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Collections for frequency maps</td>
+<td><a href="../Data%20Structures/">Data Structures</a></td>
+</tr>
+<tr>
+<td>Loop patterns</td>
+<td><a href="../Control%20Flow/">Control Flow</a></td>
+</tr>
+<tr>
+<td>String DSA patterns</td>
+<td><a href="../../../Programming/DSA%20Patterns/20.%20String%20Matching/">String Matching</a></td>
+</tr>
+<tr>
+<td>Built-in helpers</td>
+<td><a href="../Basic%20Built-in%20Functions%20and%20Libraries/">Basic Built-in Functions and Libraries</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Data%20Structures/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Python Built-in Data Structures">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Python Built-in Data Structures
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Functions%20and%20Code%20Reuse/" class="md-footer__link md-footer__link--next" aria-label="Next: Functions and Code Reuse">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Functions and Code Reuse
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Abhijit More
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/hey-abhijit-more" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/AbhijitMore" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:abhimore@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M512 416c0 35.3-28.5 64-63.9 64H64c-35.4 0-64-28.7-64-64V164c.1-15.5 7.8-30 20.5-38.8L206-2.7c30.1-20.7 69.8-20.7 99.9 0l185.6 127.9c12.8 8.8 20.4 23.3 20.5 38.8zM64 432h384.1c8.8 0 15.9-7.1 15.9-16V224.3L309.2 341.7c-31.4 23.9-74.9 23.9-106.4 0L48 224.3V416c0 8.9 7.2 16 16 16m399.6-267.6L278.7 36.8a40.07 40.07 0 0 0-45.4 0L48.4 164.4l183.4 139.1c14.3 10.8 34.1 10.8 48.4 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.footer", "navigation.top", "toc.follow", "content.code.copy", "content.code.annotate", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

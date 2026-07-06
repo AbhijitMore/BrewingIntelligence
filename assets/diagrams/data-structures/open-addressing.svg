@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img" aria-label="Open addressing with linear probing">
+  <defs>
+    <style>
+      .occupied { fill: #eef2ff; stroke: #4f46e5; stroke-width: 2; }
+      .probe { fill: #fff7ed; stroke: #d97706; stroke-width: 2.5; }
+      .empty { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; stroke-dasharray: 4 3; }
+      .label { font: 600 12px ui-monospace, Menlo, monospace; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .idx { font: 600 11px ui-monospace, Menlo, monospace; fill: #64748b; text-anchor: middle; }
+      .caption { font: 500 13px system-ui, sans-serif; fill: #475569; text-anchor: middle; }
+      .note { font: 500 12px system-ui, sans-serif; fill: #64748b; }
+      .probe-arrow { stroke: #d97706; stroke-width: 2.25; fill: none; marker-end: url(#probe); }
+    </style>
+    <marker id="probe" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <text x="320" y="24" class="caption">Open addressing (linear probing) - Python dict/set strategy</text>
+
+  <text x="80" y="58" class="idx">0</text>
+  <text x="140" y="58" class="idx">1</text>
+  <text x="200" y="58" class="idx">2</text>
+  <text x="260" y="58" class="idx">3</text>
+  <text x="320" y="58" class="idx">4</text>
+  <text x="380" y="58" class="idx">5</text>
+  <text x="440" y="58" class="idx">6</text>
+  <text x="500" y="58" class="idx">7</text>
+
+  <rect x="56" y="68" width="48" height="40" rx="8" class="occupied"/>
+  <text x="80" y="88" class="label">cat</text>
+  <rect x="116" y="68" width="48" height="40" rx="8" class="occupied"/>
+  <text x="140" y="88" class="label">dog</text>
+  <rect x="176" y="68" width="48" height="40" rx="8" class="occupied"/>
+  <text x="200" y="88" class="label">bird</text>
+  <rect x="236" y="68" width="48" height="40" rx="8" class="probe"/>
+  <text x="260" y="88" class="label">cow</text>
+  <rect x="296" y="68" width="48" height="40" rx="8" class="occupied"/>
+  <text x="320" y="88" class="label">ant</text>
+  <rect x="356" y="68" width="48" height="40" rx="8" class="empty"/>
+  <rect x="416" y="68" width="48" height="40" rx="8" class="empty"/>
+  <rect x="476" y="68" width="48" height="40" rx="8" class="empty"/>
+
+  <text x="80" y="138" class="note">h("cow") = 2 but slot 2 taken - linear probe to slot 3 - insert</text>
+  <path d="M200 68 L200 52 L260 52 L260 68" class="probe-arrow"/>
+  <text x="230" y="48" class="note" fill="#d97706">probe</text>
+
+  <text x="320" y="178" class="caption">On collision, scan forward to next empty slot (linear probing)</text>
+  <text x="320" y="200" class="caption">Separate chaining (previous diagram) uses linked lists per bucket instead</text>
+  <text x="320" y="222" class="caption">Resize and rehash when load factor grows - keeps probes short</text>
+</svg>

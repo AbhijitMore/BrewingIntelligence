@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="Dynamic array with size and capacity">
+  <defs>
+    <style>
+      .canvas { fill: #fafafa; stroke: #e2e8f0; stroke-width: 1; }
+      .used { fill: #eef2ff; stroke: #4f46e5; stroke-width: 2; }
+      .empty { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; stroke-dasharray: 6 4; }
+      .label { font: 700 14px system-ui, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .caption { font: 600 14px system-ui, sans-serif; fill: #334155; text-anchor: middle; }
+      .note { font: 500 12px system-ui, sans-serif; fill: #64748b; text-anchor: middle; }
+      .size-br { stroke: #059669; stroke-width: 2.5; fill: none; }
+      .cap-br { stroke: #4f46e5; stroke-width: 2.5; fill: none; }
+      .size-lbl { font: 700 12px ui-monospace, Menlo, monospace; fill: #059669; text-anchor: middle; }
+      .cap-lbl { font: 700 12px ui-monospace, Menlo, monospace; fill: #4f46e5; text-anchor: middle; }
+      .callout { fill: #ecfdf5; stroke: #059669; stroke-width: 1.5; }
+      .callout-txt { font: 600 12px system-ui, sans-serif; fill: #047857; text-anchor: middle; dominant-baseline: middle; }
+      .footer { font: 500 12px system-ui, sans-serif; fill: #64748b; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect x="16" y="12" width="648" height="276" rx="14" class="canvas"/>
+  <text x="340" y="38" class="caption">Dynamic array - size (in use) vs capacity (allocated)</text>
+
+  <!-- 8 slots centered: left edge x=150, each 44px wide -->
+  <text x="172" y="68" class="note">0</text>
+  <text x="216" y="68" class="note">1</text>
+  <text x="260" y="68" class="note">2</text>
+  <text x="304" y="68" class="note">3</text>
+  <text x="348" y="68" class="note">4</text>
+  <text x="392" y="68" class="note">5</text>
+  <text x="436" y="68" class="note">6</text>
+  <text x="480" y="68" class="note">7</text>
+
+  <rect x="150" y="78" width="44" height="48" rx="7" class="used"/>
+  <text x="172" y="102" class="label">1</text>
+  <rect x="194" y="78" width="44" height="48" rx="7" class="used"/>
+  <text x="216" y="102" class="label">2</text>
+  <rect x="238" y="78" width="44" height="48" rx="7" class="used"/>
+  <text x="260" y="102" class="label">3</text>
+  <rect x="282" y="78" width="44" height="48" rx="7" class="used"/>
+  <text x="304" y="102" class="label">4</text>
+  <rect x="326" y="78" width="44" height="48" rx="7" class="used"/>
+  <text x="348" y="102" class="label">5</text>
+  <rect x="370" y="78" width="44" height="48" rx="7" class="empty"/>
+  <rect x="414" y="78" width="44" height="48" rx="7" class="empty"/>
+  <rect x="458" y="78" width="44" height="48" rx="7" class="empty"/>
+
+  <!-- size: slots 0-4 -->
+  <path d="M148 136 L148 148 L374 148 L374 136" class="size-br"/>
+  <text x="261" y="164" class="size-lbl">size = 5</text>
+
+  <!-- capacity: slots 0-7 -->
+  <path d="M148 176 L148 188 L506 188 L506 176" class="cap-br"/>
+  <text x="327" y="204" class="cap-lbl">capacity = 8</text>
+
+  <rect x="220" y="218" width="240" height="34" rx="8" class="callout"/>
+  <text x="340" y="235" class="callout-txt">append when full - resize (x2)</text>
+
+  <text x="340" y="272" class="footer">O(1) index - O(1)* append - O(n) middle insert/delete</text>
+</svg>

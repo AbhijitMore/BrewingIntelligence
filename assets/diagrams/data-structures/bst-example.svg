@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" role="img" aria-label="Binary search tree example">
+  <defs>
+    <style>
+      .node { fill: #f8fafc; stroke: #64748b; stroke-width: 2; }
+      .node-root { fill: #eef2ff; stroke: #4f46e5; stroke-width: 2.5; }
+      .label { font: 700 16px system-ui, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .edge { stroke: #94a3b8; stroke-width: 2; fill: none; }
+      .caption { font: 500 13px system-ui, sans-serif; fill: #475569; text-anchor: middle; }
+      .hint-left { font: 600 12px system-ui, sans-serif; fill: #0891b2; }
+      .hint-right { font: 600 12px system-ui, sans-serif; fill: #d97706; }
+      .note { font: 500 12px system-ui, sans-serif; fill: #64748b; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <text x="280" y="24" class="caption">BST property: left &lt; node &lt; right</text>
+
+  <path d="M280 68 L170 128" class="edge"/>
+  <path d="M280 68 L390 128" class="edge"/>
+  <path d="M170 128 L120 188" class="edge"/>
+  <path d="M170 128 L220 188" class="edge"/>
+  <path d="M390 128 L340 188" class="edge"/>
+  <path d="M390 128 L440 188" class="edge"/>
+
+  <circle cx="280" cy="56" r="26" class="node-root"/>
+  <text x="280" y="56" class="label">20</text>
+  <circle cx="170" cy="146" r="24" class="node"/>
+  <text x="170" y="146" class="label">8</text>
+  <circle cx="390" cy="146" r="24" class="node"/>
+  <text x="390" y="146" class="label">22</text>
+  <circle cx="120" cy="206" r="22" class="node"/>
+  <text x="120" y="206" class="label">4</text>
+  <circle cx="220" cy="206" r="22" class="node"/>
+  <text x="220" y="206" class="label">12</text>
+  <circle cx="340" cy="206" r="22" class="node"/>
+  <text x="340" y="206" class="label">21</text>
+  <circle cx="440" cy="206" r="22" class="node"/>
+  <text x="440" y="206" class="label">25</text>
+
+  <text x="220" y="100" class="hint-left">&lt; 20</text>
+  <text x="340" y="100" class="hint-right">&gt; 20</text>
+  <text x="280" y="260" class="note">In-order: 4, 8, 12, 20, 21, 22, 25</text>
+  <text x="280" y="282" class="note">Search 12: 20 -&gt; left -&gt; 8 -&gt; right -&gt; found</text>
+</svg>

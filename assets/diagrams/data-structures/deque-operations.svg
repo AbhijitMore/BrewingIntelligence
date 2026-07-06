@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" role="img" aria-label="Deque double-ended queue operations">
+  <defs>
+    <style>
+      .frame { fill: #f8fafc; stroke: #64748b; stroke-width: 2; }
+      .front { fill: #ecfdf5; stroke: #059669; stroke-width: 2.5; }
+      .rear { fill: #eef2ff; stroke: #4f46e5; stroke-width: 2.5; }
+      .label { font: 600 14px system-ui, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .caption { font: 500 13px system-ui, sans-serif; fill: #475569; text-anchor: middle; }
+      .action { font: 600 12px system-ui, sans-serif; }
+      .arrow-front { stroke: #059669; stroke-width: 2.5; fill: none; marker-end: url(#af); }
+      .arrow-rear { stroke: #4f46e5; stroke-width: 2.5; fill: none; marker-end: url(#ar); }
+    </style>
+    <marker id="af" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#059669"/>
+    </marker>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#4f46e5"/>
+    </marker>
+  </defs>
+
+  <text x="310" y="24" class="caption">Deque - O(1) insert and remove at both ends</text>
+
+  <rect x="150" y="100" width="60" height="50" rx="6" class="front"/>
+  <text x="180" y="125" class="label">10</text>
+  <rect x="220" y="100" width="60" height="50" rx="6" class="frame"/>
+  <text x="250" y="125" class="label">20</text>
+  <rect x="290" y="100" width="60" height="50" rx="6" class="frame"/>
+  <text x="320" y="125" class="label">30</text>
+  <rect x="360" y="100" width="60" height="50" rx="6" class="rear"/>
+  <text x="390" y="125" class="label">40</text>
+
+  <text x="180" y="168" class="action" fill="#059669">front</text>
+  <text x="390" y="168" class="action" fill="#4f46e5">rear</text>
+
+  <path d="M88 125 L148 125" class="arrow-front"/>
+  <text x="84" y="108" class="action" fill="#059669" text-anchor="end">appendleft</text>
+  <text x="84" y="148" class="action" fill="#059669" text-anchor="end">popleft</text>
+
+  <path d="M430 125 L492 125" class="arrow-rear"/>
+  <text x="498" y="108" class="action" fill="#4f46e5">append</text>
+  <text x="498" y="148" class="action" fill="#4f46e5">pop</text>
+
+  <text x="310" y="210" class="caption">Use for BFS (popleft), sliding windows, palindrome checks</text>
+  <text x="310" y="232" class="caption">Python: collections.deque - never list.insert(0) or list.pop(0)</text>
+</svg>

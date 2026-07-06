@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" role="img" aria-label="Merge sort divide and conquer tree">
+  <defs>
+    <style>
+      .cell { fill: #ffffff; stroke: #64748b; stroke-width: 1.5; }
+      .sorted { fill: #ecfdf5; stroke: #059669; stroke-width: 2; }
+      .label { font: 600 13px system-ui, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .caption { font: 500 13px system-ui, sans-serif; fill: #475569; text-anchor: middle; }
+      .phase { font: 600 11px system-ui, sans-serif; fill: #64748b; text-anchor: middle; }
+      .edge { stroke: #94a3b8; stroke-width: 1.75; fill: none; }
+      .merge-edge { stroke: #059669; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <text x="300" y="24" class="caption">Merge sort - divide until size 1, then merge sorted halves</text>
+
+  <!-- row 0: final -->
+  <g>
+    <rect x="204" y="40" width="32" height="28" rx="5" class="sorted"/><text x="220" y="54" class="label">3</text>
+    <rect x="240" y="40" width="32" height="28" rx="5" class="sorted"/><text x="256" y="54" class="label">27</text>
+    <rect x="276" y="40" width="32" height="28" rx="5" class="sorted"/><text x="292" y="54" class="label">38</text>
+    <rect x="312" y="40" width="32" height="28" rx="5" class="sorted"/><text x="328" y="54" class="label">43</text>
+  </g>
+  <text x="300" y="82" class="phase">merged result</text>
+
+  <!-- row 1: merged halves -->
+  <path d="M220 68 L236 96" class="merge-edge"/>
+  <path d="M292 68 L276 96" class="merge-edge"/>
+  <path d="M328 68 L344 96" class="merge-edge"/>
+  <path d="M364 68 L348 96" class="merge-edge"/>
+
+  <rect x="204" y="96" width="32" height="28" rx="5" class="sorted"/><text x="220" y="110" class="label">27</text>
+  <rect x="240" y="96" width="32" height="28" rx="5" class="sorted"/><text x="256" y="110" class="label">38</text>
+  <rect x="312" y="96" width="32" height="28" rx="5" class="sorted"/><text x="328" y="110" class="label">3</text>
+  <rect x="348" y="96" width="32" height="28" rx="5" class="sorted"/><text x="364" y="110" class="label">43</text>
+
+  <!-- row 2: original halves -->
+  <path d="M220 124 L220 152" class="edge"/>
+  <path d="M256 124 L256 152" class="edge"/>
+  <path d="M328 124 L328 152" class="edge"/>
+  <path d="M364 124 L364 152" class="edge"/>
+
+  <rect x="204" y="152" width="32" height="28" rx="5" class="cell"/><text x="220" y="166" class="label">38</text>
+  <rect x="240" y="152" width="32" height="28" rx="5" class="cell"/><text x="256" y="166" class="label">27</text>
+  <rect x="312" y="152" width="32" height="28" rx="5" class="cell"/><text x="328" y="166" class="label">43</text>
+  <rect x="348" y="152" width="32" height="28" rx="5" class="cell"/><text x="364" y="166" class="label">3</text>
+  <text x="300" y="196" class="phase">split</text>
+
+  <!-- row 3: singles (base case) -->
+  <path d="M220 180 L212 208" class="edge"/>
+  <path d="M256 180 L264 208" class="edge"/>
+  <path d="M328 180 L320 208" class="edge"/>
+  <path d="M364 180 L372 208" class="edge"/>
+
+  <rect x="196" y="208" width="32" height="28" rx="5" class="cell"/><text x="212" y="222" class="label">38</text>
+  <rect x="248" y="208" width="32" height="28" rx="5" class="cell"/><text x="264" y="222" class="label">27</text>
+  <rect x="304" y="208" width="32" height="28" rx="5" class="cell"/><text x="320" y="222" class="label">43</text>
+  <rect x="356" y="208" width="32" height="28" rx="5" class="cell"/><text x="372" y="222" class="label">3</text>
+  <text x="300" y="252" class="phase">base case: size 1</text>
+
+  <text x="480" y="110" class="phase">merge up</text>
+  <text x="480" y="130" class="phase">compare fronts</text>
+  <text x="480" y="150" class="phase">of two sorted</text>
+  <text x="480" y="170" class="phase">halves</text>
+
+  <text x="300" y="272" class="caption">O(n log n) time - O(n) extra space - stable sort</text>
+</svg>

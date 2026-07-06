@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" role="img" aria-label="Choosing linear vs binary search">
+  <defs>
+    <style>
+      .box { fill: #f8fafc; stroke: #64748b; stroke-width: 2; }
+      .decision { fill: #eef2ff; stroke: #4f46e5; stroke-width: 2; }
+      .outcome { fill: #ecfdf5; stroke: #059669; stroke-width: 2; }
+      .outcome-alt { fill: #fff7ed; stroke: #d97706; stroke-width: 2; }
+      .label { font: 600 13px system-ui, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .caption { font: 500 13px system-ui, sans-serif; fill: #475569; text-anchor: middle; }
+      .edge { stroke: #64748b; stroke-width: 2; fill: none; marker-end: url(#e); }
+      .edge-label { font: 600 11px system-ui, sans-serif; fill: #475569; }
+    </style>
+    <marker id="e" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <text x="280" y="24" class="caption">Which search algorithm fits?</text>
+
+  <rect x="210" y="44" width="140" height="44" rx="10" class="box"/>
+  <text x="280" y="66" class="label">Need to search?</text>
+  <path d="M280 88 L280 112" class="edge"/>
+
+  <polygon points="280,112 330,152 280,192 230,152" class="decision"/>
+  <text x="280" y="148" class="label">Data sorted?</text>
+
+  <path d="M230 152 L120 152 L120 208" class="edge"/>
+  <text x="168" y="144" class="edge-label">No</text>
+  <path d="M330 152 L440 152 L440 208" class="edge"/>
+  <text x="392" y="144" class="edge-label">Yes</text>
+
+  <rect x="40" y="208" width="160" height="56" rx="10" class="outcome-alt"/>
+  <text x="120" y="228" class="label">Linear search</text>
+  <text x="120" y="248" class="label">O(n) or hash map</text>
+
+  <rect x="360" y="208" width="160" height="56" rx="10" class="outcome"/>
+  <text x="440" y="228" class="label">Binary search</text>
+  <text x="440" y="248" class="label">O(log n)</text>
+
+  <text x="280" y="300" class="caption">Repeated lookups? Sort once or use a hash table.</text>
+</svg>

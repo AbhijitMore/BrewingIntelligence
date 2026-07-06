@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="Hash table with separate chaining">
+  <defs>
+    <style>
+      .bucket { fill: #f1f5f9; stroke: #64748b; stroke-width: 2; }
+      .entry { fill: #ffffff; stroke: #94a3b8; stroke-width: 1.5; }
+      .hash-box { fill: #eef2ff; stroke: #4f46e5; stroke-width: 2; }
+      .label { font: 600 13px system-ui, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .caption { font: 500 13px system-ui, sans-serif; fill: #475569; text-anchor: middle; }
+      .arrow { stroke: #64748b; stroke-width: 2; fill: none; marker-end: url(#arr); }
+      .chain { stroke: #0891b2; stroke-width: 2; fill: none; }
+      .idx { font: 600 12px ui-monospace, Menlo, monospace; fill: #64748b; text-anchor: middle; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <text x="340" y="24" class="caption">Separate chaining - each bucket is a linked list of pairs</text>
+
+  <rect x="250" y="44" width="140" height="40" rx="8" class="hash-box"/>
+  <text x="320" y="64" class="label">h(key) % size</text>
+  <path d="M320 84 L320 108" class="arrow"/>
+
+  <text x="70" y="128" class="idx">0</text>
+  <text x="170" y="128" class="idx">1</text>
+  <text x="270" y="128" class="idx">2</text>
+  <text x="370" y="128" class="idx">3</text>
+  <text x="470" y="128" class="idx">4</text>
+
+  <rect x="40" y="138" width="60" height="36" rx="8" class="bucket"/>
+  <rect x="140" y="138" width="60" height="36" rx="8" class="bucket"/>
+  <rect x="240" y="138" width="60" height="36" rx="8" class="bucket"/>
+  <rect x="340" y="138" width="60" height="36" rx="8" class="bucket"/>
+  <rect x="440" y="138" width="60" height="36" rx="8" class="bucket"/>
+  <text x="70" y="158" class="label">null</text>
+
+  <rect x="128" y="200" width="84" height="34" rx="6" class="entry"/>
+  <text x="170" y="217" class="label">apple:10</text>
+  <path d="M170 174 L170 200" class="chain"/>
+  <rect x="128" y="248" width="84" height="34" rx="6" class="entry"/>
+  <text x="170" y="265" class="label">apricot:15</text>
+  <path d="M170 234 L170 248" class="chain"/>
+
+  <rect x="328" y="200" width="84" height="34" rx="6" class="entry"/>
+  <text x="370" y="217" class="label">banana:20</text>
+  <path d="M370 174 L370 200" class="chain"/>
+
+  <text x="340" y="292" class="caption">Lookup scans the chain when multiple keys share an index</text>
+</svg>

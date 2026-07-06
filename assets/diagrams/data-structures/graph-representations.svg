@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-label="Graph adjacency list vs adjacency matrix">
+  <defs>
+    <style>
+      .node { fill: #f8fafc; stroke: #64748b; stroke-width: 2; }
+      .label { font: 700 14px system-ui, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .caption { font: 600 13px system-ui, sans-serif; fill: #334155; text-anchor: middle; }
+      .sub { font: 500 12px system-ui, sans-serif; fill: #64748b; text-anchor: middle; }
+      .edge { stroke: #94a3b8; stroke-width: 2; fill: none; marker-end: url(#dir); }
+      .cell-on { fill: #eef2ff; stroke: #64748b; stroke-width: 1.5; }
+      .cell-off { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1.5; }
+      .cell-hdr { fill: #f1f5f9; stroke: #64748b; stroke-width: 1.5; }
+      .mono { font: 600 12px ui-monospace, Menlo, monospace; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .list-row { font: 500 13px ui-monospace, Menlo, monospace; fill: #0f172a; }
+      .panel { fill: #fafafa; stroke: #e2e8f0; stroke-width: 1; }
+    </style>
+    <marker id="dir" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <text x="360" y="24" class="caption">Same directed graph - two representations</text>
+
+  <rect x="16" y="40" width="220" height="200" rx="10" class="panel"/>
+  <text x="126" y="62" class="sub">Visual (directed)</text>
+
+  <circle cx="126" cy="96" r="18" class="node"/>
+  <text x="126" y="96" class="label">0</text>
+  <circle cx="66" cy="156" r="18" class="node"/>
+  <text x="66" y="156" class="label">1</text>
+  <circle cx="186" cy="156" r="18" class="node"/>
+  <text x="186" y="156" class="label">2</text>
+  <circle cx="126" cy="216" r="18" class="node"/>
+  <text x="126" y="216" class="label">3</text>
+
+  <path d="M112 108 L74 140" class="edge"/>
+  <path d="M140 108 L178 140" class="edge"/>
+  <path d="M74 172 L112 200" class="edge"/>
+  <path d="M178 172 L140 200" class="edge"/>
+
+  <rect x="252" y="40" width="200" height="200" rx="10" class="panel"/>
+  <text x="352" y="62" class="sub">Adjacency list</text>
+  <text x="272" y="92" class="list-row">0 -&gt; [1, 2]</text>
+  <text x="272" y="118" class="list-row">1 -&gt; [3]</text>
+  <text x="272" y="144" class="list-row">2 -&gt; [3]</text>
+  <text x="272" y="170" class="list-row">3 -&gt; []</text>
+  <text x="352" y="210" class="sub">Space O(V + E)</text>
+  <text x="352" y="228" class="sub">Sparse graphs (interviews)</text>
+
+  <rect x="468" y="40" width="236" height="200" rx="10" class="panel"/>
+  <text x="586" y="62" class="sub">Adjacency matrix</text>
+
+  <rect x="508" y="78" width="28" height="28" class="cell-hdr"/>
+  <rect x="540" y="78" width="28" height="28" class="cell-hdr"/><text x="554" y="92" class="mono">0</text>
+  <rect x="572" y="78" width="28" height="28" class="cell-hdr"/><text x="586" y="92" class="mono">1</text>
+  <rect x="604" y="78" width="28" height="28" class="cell-hdr"/><text x="618" y="92" class="mono">2</text>
+  <rect x="636" y="78" width="28" height="28" class="cell-hdr"/><text x="650" y="92" class="mono">3</text>
+
+  <rect x="508" y="110" width="28" height="28" class="cell-hdr"/><text x="522" y="124" class="mono">0</text>
+  <rect x="540" y="110" width="28" height="28" class="cell-off"/><text x="554" y="124" class="mono">0</text>
+  <rect x="572" y="110" width="28" height="28" class="cell-on"/><text x="586" y="124" class="mono">1</text>
+  <rect x="604" y="110" width="28" height="28" class="cell-on"/><text x="618" y="124" class="mono">1</text>
+  <rect x="636" y="110" width="28" height="28" class="cell-off"/><text x="650" y="124" class="mono">0</text>
+
+  <rect x="508" y="142" width="28" height="28" class="cell-hdr"/><text x="522" y="156" class="mono">1</text>
+  <rect x="540" y="142" width="28" height="28" class="cell-off"/><text x="554" y="156" class="mono">0</text>
+  <rect x="572" y="142" width="28" height="28" class="cell-off"/><text x="586" y="156" class="mono">0</text>
+  <rect x="604" y="142" width="28" height="28" class="cell-off"/><text x="618" y="156" class="mono">0</text>
+  <rect x="636" y="142" width="28" height="28" class="cell-on"/><text x="650" y="156" class="mono">1</text>
+
+  <rect x="508" y="174" width="28" height="28" class="cell-hdr"/><text x="522" y="188" class="mono">2</text>
+  <rect x="540" y="174" width="28" height="28" class="cell-off"/><text x="554" y="188" class="mono">0</text>
+  <rect x="572" y="174" width="28" height="28" class="cell-off"/><text x="586" y="188" class="mono">0</text>
+  <rect x="604" y="174" width="28" height="28" class="cell-off"/><text x="618" y="188" class="mono">0</text>
+  <rect x="636" y="174" width="28" height="28" class="cell-on"/><text x="650" y="188" class="mono">1</text>
+
+  <rect x="508" y="206" width="28" height="28" class="cell-hdr"/><text x="522" y="220" class="mono">3</text>
+  <rect x="540" y="206" width="28" height="28" class="cell-off"/><text x="554" y="220" class="mono">0</text>
+  <rect x="572" y="206" width="28" height="28" class="cell-off"/><text x="586" y="220" class="mono">0</text>
+  <rect x="604" y="206" width="28" height="28" class="cell-off"/><text x="618" y="220" class="mono">0</text>
+  <rect x="636" y="206" width="28" height="28" class="cell-off"/><text x="650" y="220" class="mono">0</text>
+
+  <text x="586" y="248" class="sub">Space O(V^2) - O(1) edge lookup</text>
+
+  <text x="360" y="280" class="caption">Prefer adjacency list for sparse graphs (typical in interviews)</text>
+  <text x="360" y="302" class="caption">Matrix[i][j] = 1 means edge i to j exists</text>
+  <text x="360" y="324" class="caption">Python: dict[int, list[int]] or defaultdict(list)</text>
+</svg>

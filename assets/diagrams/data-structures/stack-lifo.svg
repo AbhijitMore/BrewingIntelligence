@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340" role="img" aria-label="Stack LIFO diagram">
+  <defs>
+    <style>
+      .frame { fill: #f8fafc; stroke: #64748b; stroke-width: 2; }
+      .top { fill: #eef2ff; stroke: #4f46e5; stroke-width: 2.5; }
+      .label { font: 600 14px system-ui, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .caption { font: 500 13px system-ui, sans-serif; fill: #475569; text-anchor: middle; }
+      .action { font: 600 12px system-ui, sans-serif; fill: #4f46e5; }
+      .arrow { stroke: #4f46e5; stroke-width: 2.5; fill: none; marker-end: url(#a); }
+    </style>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#4f46e5"/>
+    </marker>
+  </defs>
+
+  <text x="210" y="24" class="caption">Stack - Last In, First Out (LIFO)</text>
+
+  <rect x="110" y="48" width="140" height="220" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 4" rx="8"/>
+  <text x="180" y="68" class="label">top</text>
+
+  <rect x="130" y="78" width="100" height="44" rx="6" class="top"/>
+  <text x="180" y="100" class="label">30</text>
+  <rect x="130" y="128" width="100" height="44" rx="6" class="frame"/>
+  <text x="180" y="150" class="label">20</text>
+  <rect x="130" y="178" width="100" height="44" rx="6" class="frame"/>
+  <text x="180" y="200" class="label">10</text>
+  <text x="180" y="238" class="label">bottom</text>
+
+  <path d="M255 100 L298 100" class="arrow"/>
+  <text x="304" y="100" class="action">push / pop</text>
+
+  <text x="210" y="290" class="caption">push(30) then pop() returns 30</text>
+  <text x="210" y="312" class="caption">Python: list.append(x) and list.pop()</text>
+</svg>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" role="img" aria-label="Min-heap tree and array representation">
+  <defs>
+    <style>
+      .node { fill: #f8fafc; stroke: #64748b; stroke-width: 2; }
+      .node-min { fill: #ecfdf5; stroke: #059669; stroke-width: 2.5; }
+      .label { font: 700 15px system-ui, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .edge { stroke: #94a3b8; stroke-width: 2; fill: none; }
+      .caption { font: 500 13px system-ui, sans-serif; fill: #475569; text-anchor: middle; }
+      .cell { fill: #ffffff; stroke: #64748b; stroke-width: 1.5; }
+      .idx { font: 600 11px ui-monospace, Menlo, monospace; fill: #64748b; text-anchor: middle; }
+      .note { font: 500 12px system-ui, sans-serif; fill: #64748b; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <text x="260" y="24" class="caption">Min-heap: parent &lt;= children; minimum at root (index 0)</text>
+
+  <path d="M260 52 L170 92" class="edge"/>
+  <path d="M260 52 L350 92" class="edge"/>
+  <path d="M170 92 L130 132" class="edge"/>
+  <path d="M170 92 L210 132" class="edge"/>
+  <path d="M350 92 L310 132" class="edge"/>
+  <path d="M350 92 L390 132" class="edge"/>
+
+  <circle cx="260" cy="44" r="24" class="node-min"/>
+  <text x="260" y="44" class="label">1</text>
+  <circle cx="170" cy="104" r="22" class="node"/>
+  <text x="170" y="104" class="label">3</text>
+  <circle cx="350" cy="104" r="22" class="node"/>
+  <text x="350" y="104" class="label">2</text>
+  <circle cx="130" cy="144" r="20" class="node"/>
+  <text x="130" y="144" class="label">7</text>
+  <circle cx="210" cy="144" r="20" class="node"/>
+  <text x="210" y="144" class="label">5</text>
+  <circle cx="310" cy="144" r="20" class="node"/>
+  <text x="310" y="144" class="label">4</text>
+  <circle cx="390" cy="144" r="20" class="node"/>
+  <text x="390" y="144" class="label">6</text>
+
+  <text x="260" y="188" class="note">Array storage (level-order):</text>
+  <g transform="translate(110,200)">
+    <rect x="0" y="16" width="50" height="36" class="cell"/>
+    <rect x="50" y="16" width="50" height="36" class="cell"/>
+    <rect x="100" y="16" width="50" height="36" class="cell"/>
+    <rect x="150" y="16" width="50" height="36" class="cell"/>
+    <rect x="200" y="16" width="50" height="36" class="cell"/>
+    <rect x="250" y="16" width="50" height="36" class="cell"/>
+    <rect x="300" y="16" width="50" height="36" class="cell"/>
+    <text x="25" y="38" class="label">1</text>
+    <text x="75" y="38" class="label">3</text>
+    <text x="125" y="38" class="label">2</text>
+    <text x="175" y="38" class="label">7</text>
+    <text x="225" y="38" class="label">5</text>
+    <text x="275" y="38" class="label">4</text>
+    <text x="325" y="38" class="label">6</text>
+    <text x="25" y="10" class="idx">0</text>
+    <text x="75" y="10" class="idx">1</text>
+    <text x="125" y="10" class="idx">2</text>
+    <text x="175" y="10" class="idx">3</text>
+    <text x="225" y="10" class="idx">4</text>
+    <text x="275" y="10" class="idx">5</text>
+    <text x="325" y="10" class="idx">6</text>
+  </g>
+
+  <text x="260" y="278" class="note">parent=(i-1)//2 | left=2i+1 | right=2i+2 | Python: heapq</text>
+</svg>
